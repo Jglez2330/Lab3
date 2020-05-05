@@ -1,0 +1,27 @@
+|and_N
+a[0] => y.IN0
+a[1] => y.IN0
+a[2] => y.IN0
+a[3] => y.IN0
+a[4] => y.IN0
+a[5] => y.IN0
+a[6] => y.IN0
+a[7] => y.IN0
+b[0] => y.IN1
+b[1] => y.IN1
+b[2] => y.IN1
+b[3] => y.IN1
+b[4] => y.IN1
+b[5] => y.IN1
+b[6] => y.IN1
+b[7] => y.IN1
+y[0] << y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] << y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] << y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] << y.DB_MAX_OUTPUT_PORT_TYPE
+y[4] << y.DB_MAX_OUTPUT_PORT_TYPE
+y[5] << y.DB_MAX_OUTPUT_PORT_TYPE
+y[6] << y.DB_MAX_OUTPUT_PORT_TYPE
+y[7] << y.DB_MAX_OUTPUT_PORT_TYPE
+
+
