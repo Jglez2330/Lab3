@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Laboratorio_3
-Tue May 05 10:21:47 2020
+Thu May 07 11:15:56 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -37,9 +37,9 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue May 05 10:21:47 2020 ;
+; EDA Netlist Writer Status ; Successful - Thu May 07 11:15:56 2020 ;
 ; Revision Name             ; Laboratorio_3                         ;
-; Top-level Entity Name     ; notA_N                                ;
+; Top-level Entity Name     ; logic_unit                            ;
 ; Family                    ; Cyclone V                             ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+---------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                                                   ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                                              ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/User/Documents/Fabri/TEC/Ing. en Computadores/2020 I Semestre/Taller de Diseño Digital/Proyectos_Quartus/Lab3/simulation/modelsim/Laboratorio_3.svo ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------+
+; Simulation Generated Files                                      ;
++-----------------------------------------------------------------+
+; Generated Files                                                 ;
++-----------------------------------------------------------------+
+; C:/Proyectos_Quartus/Lab3/simulation/modelsim/Laboratorio_3.svo ;
++-----------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,13 +81,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Tue May 05 10:21:44 2020
+    Info: Processing started: Thu May 07 11:15:53 2020
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Laboratorio_3 -c Laboratorio_3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Laboratorio_3.svo in folder "C:/Users/User/Documents/Fabri/TEC/Ing. en Computadores/2020 I Semestre/Taller de Diseño Digital/Proyectos_Quartus/Lab3/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Laboratorio_3.svo in folder "C:/Proyectos_Quartus/Lab3/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4734 megabytes
-    Info: Processing ended: Tue May 05 10:21:47 2020
+    Info: Processing ended: Thu May 07 11:15:56 2020
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

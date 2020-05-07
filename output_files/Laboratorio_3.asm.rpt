@@ -1,5 +1,5 @@
 Assembler report for Laboratorio_3
-Tue May 05 10:21:31 2020
+Thu May 07 11:15:40 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/User/Documents/Fabri/TEC/Ing. en Computadores/2020 I Semestre/Taller de Diseño Digital/Proyectos_Quartus/Lab3/output_files/Laboratorio_3.sof
+  5. Assembler Device Options: C:/Proyectos_Quartus/Lab3/output_files/Laboratorio_3.sof
   6. Assembler Messages
 
 
@@ -38,9 +38,9 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue May 05 10:21:31 2020 ;
+; Assembler Status      ; Successful - Thu May 07 11:15:40 2020 ;
 ; Revision Name         ; Laboratorio_3                         ;
-; Top-level Entity Name ; notA_N                                ;
+; Top-level Entity Name ; logic_unit                            ;
 ; Family                ; Cyclone V                             ;
 ; Device                ; 5CGXFC7C6F23I7                        ;
 +-----------------------+---------------------------------------+
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                                                             ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                                                             ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/User/Documents/Fabri/TEC/Ing. en Computadores/2020 I Semestre/Taller de Diseño Digital/Proyectos_Quartus/Lab3/output_files/Laboratorio_3.sof ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------+
+; Assembler Generated Files                                ;
++----------------------------------------------------------+
+; File Name                                                ;
++----------------------------------------------------------+
+; C:/Proyectos_Quartus/Lab3/output_files/Laboratorio_3.sof ;
++----------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/User/Documents/Fabri/TEC/Ing. en Computadores/2020 I Semestre/Taller de Diseño Digital/Proyectos_Quartus/Lab3/output_files/Laboratorio_3.sof ;
-+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                                                                        ;
-+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00EC3D72                                                                                                                                                     ;
-; Checksum       ; 0x00EC3D72                                                                                                                                                     ;
-+----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Proyectos_Quartus/Lab3/output_files/Laboratorio_3.sof ;
++----------------+-------------------------------------------------------------------+
+; Option         ; Setting                                                           ;
++----------------+-------------------------------------------------------------------+
+; JTAG usercode  ; 0x00EC368F                                                        ;
+; Checksum       ; 0x00EC368F                                                        ;
++----------------+-------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Tue May 05 10:21:14 2020
+    Info: Processing started: Thu May 07 11:15:25 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Laboratorio_3 -c Laboratorio_3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4845 megabytes
-    Info: Processing ended: Tue May 05 10:21:31 2020
-    Info: Elapsed time: 00:00:17
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Thu May 07 11:15:40 2020
+    Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:15
 
 
