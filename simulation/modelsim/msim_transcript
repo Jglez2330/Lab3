@@ -10,46 +10,45 @@
 # Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/and_N.sv}
+# vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/notA_N.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:16:34 on May 07,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/and_N.sv 
-# -- Compiling module and_N
+# Start time: 07:48:22 on May 12,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/notA_N.sv 
+# -- Compiling module notA_N
 # 
 # Top level modules:
-# 	and_N
-# End time: 11:16:34 on May 07,2020, Elapsed time: 0:00:00
+# 	notA_N
+# End time: 07:48:22 on May 12,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/logic_unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:16:34 on May 07,2020
+# Start time: 07:48:22 on May 12,2020
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/logic_unit.sv 
 # -- Compiling module logic_unit
 # 
 # Top level modules:
 # 	logic_unit
-# End time: 11:16:34 on May 07,2020, Elapsed time: 0:00:00
+# End time: 07:48:22 on May 12,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/and_N_TestBench.sv}
+# vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/notA_N_TestBench.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:16:34 on May 07,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/and_N_TestBench.sv 
-# -- Compiling module and_N_TestBench
+# Start time: 07:48:22 on May 12,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/notA_N_TestBench.sv 
+# -- Compiling module notA_N_TestBench
 # 
 # Top level modules:
-# 	and_N_TestBench
-# End time: 11:16:35 on May 07,2020, Elapsed time: 0:00:01
+# 	notA_N_TestBench
+# End time: 07:48:23 on May 12,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-vsim work.and_N_TestBench
-# vsim work.and_N_TestBench 
-# Start time: 11:16:43 on May 07,2020
+vsim work.notA_N_TestBench
+# vsim work.notA_N_TestBench 
+# Start time: 07:48:27 on May 12,2020
 # Loading sv_std.std
-# Loading work.and_N_TestBench
-# Loading work.and_N
-add wave -position end  sim:/and_N_TestBench/a
-add wave -position end  sim:/and_N_TestBench/b
-add wave -position end  sim:/and_N_TestBench/y
+# Loading work.notA_N_TestBench
+# Loading work.notA_N
+add wave -position end  sim:/notA_N_TestBench/a
+add wave -position end  sim:/notA_N_TestBench/y
 run -all
-# End time: 11:17:28 on May 07,2020, Elapsed time: 0:00:45
+# End time: 07:49:08 on May 12,2020, Elapsed time: 0:00:41
 # Errors: 0, Warnings: 0
