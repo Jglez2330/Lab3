@@ -1,0 +1,19 @@
+module and_N_TestBench();
+	
+	logic a,b,y;
+	
+	and_N DUT (.a(a), .b(b), .y(y));
+	
+	initial begin
+		
+		a = 0; b = 0; #10;
+		b = 1; #10;
+		a = 1; b = 0; #10;
+		b = 1; #10;
+		
+	end
+	
+endmodule
+		
+		
+		

@@ -1,5 +1,5 @@
-Analysis & Elaboration report for Laboratorio_3
-Tue May 05 10:31:50 2020
+Analysis & Synthesis report for Laboratorio_3
+Tue May 12 07:53:28 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -7,11 +7,21 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |and_N
-  5. Analysis & Elaboration Settings
-  6. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |logic_unit
+ 10. Parameter Settings for User Entity Instance: and_N:AND
+ 11. Parameter Settings for User Entity Instance: and_N_TestBench:ANDTB
+ 12. Parameter Settings for User Entity Instance: and_N_TestBench:ANDTB|and_N:DUT
+ 13. Port Connectivity Checks: "and_N_TestBench:ANDTB|and_N:DUT"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -35,57 +45,36 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue May 05 10:31:50 2020       ;
-; Quartus Prime Version         ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
-; Revision Name                 ; Laboratorio_3                               ;
-; Top-level Entity Name         ; and_N                                       ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |and_N ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; N              ; 8     ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue May 12 07:53:28 2020       ;
+; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                   ; Laboratorio_3                               ;
+; Top-level Entity Name           ; logic_unit                                  ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 6                                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C6F23I7     ;                    ;
-; Top-level entity name                                                           ; and_N              ; Laboratorio_3      ;
+; Top-level entity name                                                           ; logic_unit         ; Laboratorio_3      ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -166,29 +155,204 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                 ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------+---------+
+; and_N.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/and_N.sv           ;         ;
+; logic_unit.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/logic_unit.sv      ;         ;
+; and_N_TestBench.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/and_N_TestBench.sv ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 1              ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 2              ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 0              ;
+;     -- 5 input functions                    ; 0              ;
+;     -- 4 input functions                    ; 0              ;
+;     -- <=3 input functions                  ; 2              ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 6              ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; and_N:AND|y[0] ;
+; Maximum fan-out                             ; 1              ;
+; Total fan-out                               ; 12             ;
+; Average fan-out                             ; 0.86           ;
++---------------------------------------------+----------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
+; |logic_unit                ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 6    ; 0            ; |logic_unit           ; logic_unit  ; work         ;
+;    |and_N:AND|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |logic_unit|and_N:AND ; and_N       ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |logic_unit ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; N              ; 2     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: and_N:AND ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; N              ; 2     ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: and_N_TestBench:ANDTB ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; N              ; 2     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: and_N_TestBench:ANDTB|and_N:DUT ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; N              ; 2     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "and_N_TestBench:ANDTB|and_N:DUT"                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; y    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 2                           ;
+;     normal            ; 2                           ;
+;         2 data inputs ; 2                           ;
+; boundary_port         ; 6                           ;
+;                       ;                             ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 1.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Tue May 05 10:31:30 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Laboratorio_3 -c Laboratorio_3 --analysis_and_elaboration
+    Info: Processing started: Tue May 12 07:53:11 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Laboratorio_3 -c Laboratorio_3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file and_n.sv
-    Info (12023): Found entity 1: and_N File: C:/Users/User/Documents/Fabri/TEC/Ing. en Computadores/2020 I Semestre/Taller de Diseño Digital/Proyectos_Quartus/Lab3/and_N.sv Line: 1
+    Info (12023): Found entity 1: and_N File: C:/Proyectos_Quartus/Lab3/and_N.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file or_n.sv
-    Info (12023): Found entity 1: or_N File: C:/Users/User/Documents/Fabri/TEC/Ing. en Computadores/2020 I Semestre/Taller de Diseño Digital/Proyectos_Quartus/Lab3/or_N.sv Line: 1
+    Info (12023): Found entity 1: or_N File: C:/Proyectos_Quartus/Lab3/or_N.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file xor_n.sv
-    Info (12023): Found entity 1: xor_N File: C:/Users/User/Documents/Fabri/TEC/Ing. en Computadores/2020 I Semestre/Taller de Diseño Digital/Proyectos_Quartus/Lab3/xor_N.sv Line: 1
+    Info (12023): Found entity 1: xor_N File: C:/Proyectos_Quartus/Lab3/xor_N.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file nota_n.sv
-    Info (12023): Found entity 1: notA_N File: C:/Users/User/Documents/Fabri/TEC/Ing. en Computadores/2020 I Semestre/Taller de Diseño Digital/Proyectos_Quartus/Lab3/notA_N.sv Line: 1
-Info (12127): Elaborating entity "and_N" for the top level hierarchy
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4775 megabytes
-    Info: Processing ended: Tue May 05 10:31:50 2020
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:44
+    Info (12023): Found entity 1: notA_N File: C:/Proyectos_Quartus/Lab3/notA_N.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file logic_unit.sv
+    Info (12023): Found entity 1: logic_unit File: C:/Proyectos_Quartus/Lab3/logic_unit.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file and_n_testbench.sv
+    Info (12023): Found entity 1: and_N_TestBench File: C:/Proyectos_Quartus/Lab3/and_N_TestBench.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file or_n_-testbench.sv
+    Info (12023): Found entity 1: or_N_TestBench File: C:/Proyectos_Quartus/Lab3/or_N_-TestBench.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file xor_n_testbench.sv
+    Info (12023): Found entity 1: xor_N_TestBench File: C:/Proyectos_Quartus/Lab3/xor_N_TestBench.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file nota_n_testbench.sv
+    Info (12023): Found entity 1: notA_N_TestBench File: C:/Proyectos_Quartus/Lab3/notA_N_TestBench.sv Line: 3
+Info (12127): Elaborating entity "logic_unit" for the top level hierarchy
+Info (12128): Elaborating entity "and_N" for hierarchy "and_N:AND" File: C:/Proyectos_Quartus/Lab3/logic_unit.sv Line: 7
+Info (12128): Elaborating entity "and_N_TestBench" for hierarchy "and_N_TestBench:ANDTB" File: C:/Proyectos_Quartus/Lab3/logic_unit.sv Line: 9
+Warning (10230): Verilog HDL assignment warning at and_N_TestBench.sv(15): truncated value with size 32 to match size of target (2) File: C:/Proyectos_Quartus/Lab3/and_N_TestBench.sv Line: 15
+Warning (10230): Verilog HDL assignment warning at and_N_TestBench.sv(16): truncated value with size 32 to match size of target (2) File: C:/Proyectos_Quartus/Lab3/and_N_TestBench.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at and_N_TestBench.sv(17): truncated value with size 32 to match size of target (2) File: C:/Proyectos_Quartus/Lab3/and_N_TestBench.sv Line: 17
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 8 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 2 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4808 megabytes
+    Info: Processing ended: Tue May 12 07:53:28 2020
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:39
 
 
