@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Laboratorio_3
-Thu May 14 09:18:02 2020
+Thu May 14 10:31:10 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -48,14 +48,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 14 09:18:02 2020       ;
+; Analysis & Synthesis Status     ; Successful - Thu May 14 10:31:10 2020       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; Laboratorio_3                               ;
 ; Top-level Entity Name           ; flag_unit                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 3                                           ;
+; Total pins                      ; 9                                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -179,6 +179,11 @@ https://fpgasoftware.intel.com/eula.
 ; flagZero_logic.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/flagZero_logic.sv           ;         ;
 ; flagZero_logic_TestBench.sv      ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/flagZero_logic_TestBench.sv ;         ;
 ; flag_unit.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/flag_unit.sv                ;         ;
+; nor_2.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/nor_2.sv                    ;         ;
+; xor_2.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/xor_2.sv                    ;         ;
+; xnor_2.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/xnor_2.sv                   ;         ;
+; and__3.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/and__3.sv                   ;         ;
+; flagV_logic.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/flagV_logic.sv              ;         ;
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------+---------+
 
 
@@ -198,14 +203,14 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                             ;
 ; Dedicated logic registers                   ; 0                           ;
 ;                                             ;                             ;
-; I/O pins                                    ; 3                           ;
+; I/O pins                                    ; 9                           ;
 ;                                             ;                             ;
 ; Total DSP Blocks                            ; 0                           ;
 ;                                             ;                             ;
 ; Maximum fan-out node                        ; flagZero_logic:FZL|WideNor0 ;
 ; Maximum fan-out                             ; 1                           ;
-; Total fan-out                               ; 6                           ;
-; Average fan-out                             ; 0.86                        ;
+; Total fan-out                               ; 12                          ;
+; Average fan-out                             ; 0.63                        ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -214,7 +219,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name    ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+----------------+--------------+
-; |flag_unit                 ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 3    ; 0            ; |flag_unit                    ; flag_unit      ; work         ;
+; |flag_unit                 ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 9    ; 0            ; |flag_unit                    ; flag_unit      ; work         ;
 ;    |flagZero_logic:FZL|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |flag_unit|flagZero_logic:FZL ; flagZero_logic ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -289,14 +294,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 2                           ;
-;     normal            ; 2                           ;
+; arriav_lcell_comb     ; 3                           ;
+;     normal            ; 3                           ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 1                           ;
-; boundary_port         ; 3                           ;
+; boundary_port         ; 9                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 2.00                        ;
+; Average LUT depth     ; 1.60                        ;
 +-----------------------+-----------------------------+
 
 
@@ -315,7 +321,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Thu May 14 09:17:44 2020
+    Info: Processing started: Thu May 14 10:30:50 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Laboratorio_3 -c Laboratorio_3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -343,22 +349,48 @@ Info (12021): Found 1 design units, including 1 entities, in source file flagzer
     Info (12023): Found entity 1: flagZero_logic_TestBench File: C:/Proyectos_Quartus/Lab3/flagZero_logic_TestBench.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file flag_unit.sv
     Info (12023): Found entity 1: flag_unit File: C:/Proyectos_Quartus/Lab3/flag_unit.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file nor_2.sv
+    Info (12023): Found entity 1: nor_2 File: C:/Proyectos_Quartus/Lab3/nor_2.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file xor_2.sv
+    Info (12023): Found entity 1: xor_2 File: C:/Proyectos_Quartus/Lab3/xor_2.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file xnor_2.sv
+    Info (12023): Found entity 1: xnor_2 File: C:/Proyectos_Quartus/Lab3/xnor_2.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file and__3.sv
+    Info (12023): Found entity 1: and_3 File: C:/Proyectos_Quartus/Lab3/and__3.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file flagv_logic.sv
+    Info (12023): Found entity 1: flagV_logic File: C:/Proyectos_Quartus/Lab3/flagV_logic.sv Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at xnor_2.sv(7): created implicit net for "J" File: C:/Proyectos_Quartus/Lab3/xnor_2.sv Line: 7
 Info (12127): Elaborating entity "flag_unit" for the top level hierarchy
-Info (12128): Elaborating entity "flagZero_logic" for hierarchy "flagZero_logic:FZL" File: C:/Proyectos_Quartus/Lab3/flag_unit.sv Line: 7
-Info (12128): Elaborating entity "flagZero_logic_TestBench" for hierarchy "flagZero_logic_TestBench:FZLTB" File: C:/Proyectos_Quartus/Lab3/flag_unit.sv Line: 8
+Info (12128): Elaborating entity "flagZero_logic" for hierarchy "flagZero_logic:FZL" File: C:/Proyectos_Quartus/Lab3/flag_unit.sv Line: 9
+Info (12128): Elaborating entity "flagZero_logic_TestBench" for hierarchy "flagZero_logic_TestBench:FZLTB" File: C:/Proyectos_Quartus/Lab3/flag_unit.sv Line: 10
 Warning (10230): Verilog HDL assignment warning at flagZero_logic_TestBench.sv(17): truncated value with size 32 to match size of target (2) File: C:/Proyectos_Quartus/Lab3/flagZero_logic_TestBench.sv Line: 17
 Warning (10230): Verilog HDL assignment warning at flagZero_logic_TestBench.sv(18): truncated value with size 32 to match size of target (2) File: C:/Proyectos_Quartus/Lab3/flagZero_logic_TestBench.sv Line: 18
+Info (12128): Elaborating entity "flagV_logic" for hierarchy "flagV_logic:FVL" File: C:/Proyectos_Quartus/Lab3/flag_unit.sv Line: 11
+Info (12128): Elaborating entity "nor_2" for hierarchy "flagV_logic:FVL|nor_2:NOR2" File: C:/Proyectos_Quartus/Lab3/flagV_logic.sv Line: 8
+Info (12128): Elaborating entity "xor_2" for hierarchy "flagV_logic:FVL|xor_2:XOR2" File: C:/Proyectos_Quartus/Lab3/flagV_logic.sv Line: 9
+Info (12128): Elaborating entity "xnor_2" for hierarchy "flagV_logic:FVL|xnor_2:XNOR2" File: C:/Proyectos_Quartus/Lab3/flagV_logic.sv Line: 10
+Warning (10036): Verilog HDL or VHDL warning at xnor_2.sv(7): object "J" assigned a value but never read File: C:/Proyectos_Quartus/Lab3/xnor_2.sv Line: 7
+Warning (10034): Output port "K" at xnor_2.sv(4) has no driver File: C:/Proyectos_Quartus/Lab3/xnor_2.sv Line: 4
+Info (12128): Elaborating entity "and_3" for hierarchy "flagV_logic:FVL|and_3:AND3" File: C:/Proyectos_Quartus/Lab3/flagV_logic.sv Line: 11
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "v" is stuck at GND File: C:/Proyectos_Quartus/Lab3/flag_unit.sv Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 1 output pins
+Warning (21074): Design contains 5 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "so2" File: C:/Proyectos_Quartus/Lab3/flag_unit.sv Line: 5
+    Warning (15610): No output dependent on input pin "so1" File: C:/Proyectos_Quartus/Lab3/flag_unit.sv Line: 5
+    Warning (15610): No output dependent on input pin "yn1" File: C:/Proyectos_Quartus/Lab3/flag_unit.sv Line: 5
+    Warning (15610): No output dependent on input pin "an1" File: C:/Proyectos_Quartus/Lab3/flag_unit.sv Line: 5
+    Warning (15610): No output dependent on input pin "bn1" File: C:/Proyectos_Quartus/Lab3/flag_unit.sv Line: 5
+Info (21057): Implemented 10 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 2 output pins
     Info (21061): Implemented 1 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4804 megabytes
-    Info: Processing ended: Thu May 14 09:18:02 2020
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:40
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4805 megabytes
+    Info: Processing ended: Thu May 14 10:31:10 2020
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:43
 
 

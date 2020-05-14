@@ -1,7 +1,13 @@
 |flag_unit
 y[0] => y[0].IN1
 y[1] => y[1].IN1
+so2 => so2.IN1
+so1 => so1.IN1
+yn1 => yn1.IN1
+an1 => an1.IN1
+bn1 => bn1.IN1
 z <= flagZero_logic:FZL.z
+v <= flagV_logic:FVL.V
 
 
 |flag_unit|flagZero_logic:FZL
@@ -17,5 +23,39 @@ z <= WideNor0.DB_MAX_OUTPUT_PORT_TYPE
 y[0] => WideNor0.IN0
 y[1] => WideNor0.IN1
 z <= WideNor0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|flag_unit|flagV_logic:FVL
+so2 => so2.IN1
+so1 => so1.IN1
+yn1 => yn1.IN1
+an1 => an1.IN2
+bn1 => bn1.IN1
+V <= and_3:AND3.V
+
+
+|flag_unit|flagV_logic:FVL|nor_2:NOR2
+so2 => H.IN0
+so1 => H.IN1
+H <= H.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|flag_unit|flagV_logic:FVL|xor_2:XOR2
+yn1 => J.IN0
+an1 => J.IN1
+J <= J.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|flag_unit|flagV_logic:FVL|xnor_2:XNOR2
+an1 => ~NO_FANOUT~
+bn1 => ~NO_FANOUT~
+K <= <GND>
+
+
+|flag_unit|flagV_logic:FVL|and_3:AND3
+H => V.IN0
+J => V.IN1
+K => V.IN1
+V <= V.DB_MAX_OUTPUT_PORT_TYPE
 
 
