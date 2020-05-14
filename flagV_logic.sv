@@ -1,4 +1,4 @@
-//Módulo encargado de la lógica de la bandera V
+//Módulo encargado de la lógica de la bandera V por ESTRUCTURA
 
 module flagV_logic (input logic so2,so1,yn1,an1,bn1, output logic V);	
 

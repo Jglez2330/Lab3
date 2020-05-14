@@ -8,7 +8,8 @@ module flag_unit #(parameter N = 2)
 					
 			flagZero_logic FZL(.y(y), .z(z));
 			flagZero_logic_TestBench FZLTB();
-			flagV_logic FVL(.so2(so2), .so1(so1), .yn1(yn1), .an1(an1), .bn1(bn1), .V(v));
+			flagVB_logic FVBL(.so2(so2), .so1(so1), .yn1(yn1), .an1(an1), .bn1(bn1), .V(v));
+			flagV_logic_TestBench FVLTB();
 					
 					
 					

@@ -8,11 +8,35 @@
 					"strict" : false
 				},
 				{
+					"name" : "v",
+					"strict" : false
+				},
+				{
 					"name" : "y[0]",
 					"strict" : false
 				},
 				{
 					"name" : "y[1]",
+					"strict" : false
+				},
+				{
+					"name" : "so2",
+					"strict" : false
+				},
+				{
+					"name" : "so1",
+					"strict" : false
+				},
+				{
+					"name" : "yn1",
+					"strict" : false
+				},
+				{
+					"name" : "an1",
+					"strict" : false
+				},
+				{
+					"name" : "bn1",
 					"strict" : false
 				}
 			]

@@ -10,15 +10,15 @@ cModel Technology
 Z0 dC:/Proyectos_Quartus/Lab3/simulation/modelsim
 vflag_unit
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1589469594
+Z2 !s110 1589479283
 !i10b 1
-!s100 `bDP]o5a3ElKJCg8DP@8A2
-I<2e`=7Xnb:T5C?Y?KHI?P0
+!s100 NaQU2Xz^Q:I2l2U=RA9>13
+I80l7kPOQ5cbZmN6>TYPl<2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 flag_unit_sv_unit
 S1
 R0
-w1589469462
+w1589478754
 8C:/Proyectos_Quartus/Lab3/flag_unit.sv
 FC:/Proyectos_Quartus/Lab3/flag_unit.sv
 L0 3
@@ -26,13 +26,65 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1589469594.000000
+Z5 !s108 1589479283.000000
 !s107 C:/Proyectos_Quartus/Lab3/flag_unit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/flag_unit.sv|
 !i113 1
 Z6 o-sv -work work
 Z7 !s92 -sv -work work +incdir+C:/Proyectos_Quartus/Lab3
 Z8 tCvgOpt 0
+vflagV_logic_TestBench
+R1
+R2
+!i10b 1
+!s100 lVICJGbD@zEXNmo[e2NiC2
+I1X8@OdKnFm[3R]eW:5kH=3
+R3
+!s105 flagV_logic_TestBench_sv_unit
+S1
+R0
+w1589478400
+8C:/Proyectos_Quartus/Lab3/flagV_logic_TestBench.sv
+FC:/Proyectos_Quartus/Lab3/flagV_logic_TestBench.sv
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Proyectos_Quartus/Lab3/flagV_logic_TestBench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/flagV_logic_TestBench.sv|
+!i113 1
+R6
+R7
+R8
+nflag@v_logic_@test@bench
+vflagVB_logic
+R1
+R2
+!i10b 1
+!s100 FnfeG43m]a`i9QZKBF`^e2
+I5L4c;9c9lTMVc1CCEa_m40
+R3
+!s105 flagVB_logic_sv_unit
+S1
+R0
+w1589478042
+8C:/Proyectos_Quartus/Lab3/flagVB_logic.sv
+FC:/Proyectos_Quartus/Lab3/flagVB_logic.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Proyectos_Quartus/Lab3/flagVB_logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/flagVB_logic.sv|
+!i113 1
+R6
+R7
+R8
+nflag@v@b_logic
 vflagZero_logic
 R1
 R2
