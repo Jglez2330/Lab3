@@ -4,27 +4,15 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "z",
+					"strict" : false
+				},
+				{
 					"name" : "y[0]",
 					"strict" : false
 				},
 				{
 					"name" : "y[1]",
-					"strict" : false
-				},
-				{
-					"name" : "a[0]",
-					"strict" : false
-				},
-				{
-					"name" : "b[0]",
-					"strict" : false
-				},
-				{
-					"name" : "a[1]",
-					"strict" : false
-				},
-				{
-					"name" : "b[1]",
 					"strict" : false
 				}
 			]
