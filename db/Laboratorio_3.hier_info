@@ -1,8 +1,8 @@
 |ALU
 selection[0] => selection[0].IN2
-selection[1] => selection[1].IN2
-selection[2] => selection[2].IN2
-selection[3] => selection[3].IN2
+selection[1] => selection[1].IN3
+selection[2] => selection[2].IN3
+selection[3] => selection[3].IN3
 A[0] => A[0].IN6
 A[1] => A[1].IN6
 A[2] => A[2].IN6
@@ -10,7 +10,7 @@ A[3] => A[3].IN6
 A[4] => A[4].IN6
 A[5] => A[5].IN6
 A[6] => A[6].IN6
-A[7] => A[7].IN6
+A[7] => A[7].IN7
 B[0] => B[0].IN5
 B[1] => B[1].IN5
 B[2] => B[2].IN5
@@ -18,10 +18,10 @@ B[3] => B[3].IN5
 B[4] => B[4].IN5
 B[5] => B[5].IN5
 B[6] => B[6].IN5
-B[7] => B[7].IN5
+B[7] => B[7].IN6
 carry_in => carry_in.IN1
 zero <= flagZero_logic:ZeroFlag.z
-overflow <= <GND>
+overflow <= flagVB_logic:VFlag.V
 negative <= result[7].DB_MAX_OUTPUT_PORT_TYPE
 carry_out <= MUX_N:MuxCarryOut.nOUT
 result[0] <= result[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -299,6 +299,106 @@ cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|ALU|and_N:And
+a[0] => y.IN0
+a[1] => y.IN0
+a[2] => y.IN0
+a[3] => y.IN0
+a[4] => y.IN0
+a[5] => y.IN0
+a[6] => y.IN0
+a[7] => y.IN0
+b[0] => y.IN1
+b[1] => y.IN1
+b[2] => y.IN1
+b[3] => y.IN1
+b[4] => y.IN1
+b[5] => y.IN1
+b[6] => y.IN1
+b[7] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|or_N:OR
+a[0] => y.IN0
+a[1] => y.IN0
+a[2] => y.IN0
+a[3] => y.IN0
+a[4] => y.IN0
+a[5] => y.IN0
+a[6] => y.IN0
+a[7] => y.IN0
+b[0] => y.IN1
+b[1] => y.IN1
+b[2] => y.IN1
+b[3] => y.IN1
+b[4] => y.IN1
+b[5] => y.IN1
+b[6] => y.IN1
+b[7] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|notA_N:NOT
+a[0] => y[0].DATAIN
+a[1] => y[1].DATAIN
+a[2] => y[2].DATAIN
+a[3] => y[3].DATAIN
+a[4] => y[4].DATAIN
+a[5] => y[5].DATAIN
+a[6] => y[6].DATAIN
+a[7] => y[7].DATAIN
+y[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= a[4].DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= a[5].DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= a[6].DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= a[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|xor_N:XOR
+a[0] => y.IN0
+a[1] => y.IN0
+a[2] => y.IN0
+a[3] => y.IN0
+a[4] => y.IN0
+a[5] => y.IN0
+a[6] => y.IN0
+a[7] => y.IN0
+b[0] => y.IN1
+b[1] => y.IN1
+b[2] => y.IN1
+b[3] => y.IN1
+b[4] => y.IN1
+b[5] => y.IN1
+b[6] => y.IN1
+b[7] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |ALU|MUX_N:Mux
 selection[0] => Mux0.IN3
 selection[0] => Mux1.IN3
@@ -494,106 +594,6 @@ P[0] => Mux0.IN19
 nOUT[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU|and_N:And
-a[0] => y.IN0
-a[1] => y.IN0
-a[2] => y.IN0
-a[3] => y.IN0
-a[4] => y.IN0
-a[5] => y.IN0
-a[6] => y.IN0
-a[7] => y.IN0
-b[0] => y.IN1
-b[1] => y.IN1
-b[2] => y.IN1
-b[3] => y.IN1
-b[4] => y.IN1
-b[5] => y.IN1
-b[6] => y.IN1
-b[7] => y.IN1
-y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[4] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[5] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[7] <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|or_N:OR
-a[0] => y.IN0
-a[1] => y.IN0
-a[2] => y.IN0
-a[3] => y.IN0
-a[4] => y.IN0
-a[5] => y.IN0
-a[6] => y.IN0
-a[7] => y.IN0
-b[0] => y.IN1
-b[1] => y.IN1
-b[2] => y.IN1
-b[3] => y.IN1
-b[4] => y.IN1
-b[5] => y.IN1
-b[6] => y.IN1
-b[7] => y.IN1
-y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[4] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[5] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[7] <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|notA_N:NOT
-a[0] => y[0].DATAIN
-a[1] => y[1].DATAIN
-a[2] => y[2].DATAIN
-a[3] => y[3].DATAIN
-a[4] => y[4].DATAIN
-a[5] => y[5].DATAIN
-a[6] => y[6].DATAIN
-a[7] => y[7].DATAIN
-y[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
-y[4] <= a[4].DB_MAX_OUTPUT_PORT_TYPE
-y[5] <= a[5].DB_MAX_OUTPUT_PORT_TYPE
-y[6] <= a[6].DB_MAX_OUTPUT_PORT_TYPE
-y[7] <= a[7].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|xor_N:XOR
-a[0] => y.IN0
-a[1] => y.IN0
-a[2] => y.IN0
-a[3] => y.IN0
-a[4] => y.IN0
-a[5] => y.IN0
-a[6] => y.IN0
-a[7] => y.IN0
-b[0] => y.IN1
-b[1] => y.IN1
-b[2] => y.IN1
-b[3] => y.IN1
-b[4] => y.IN1
-b[5] => y.IN1
-b[6] => y.IN1
-b[7] => y.IN1
-y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[4] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[5] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[7] <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |ALU|flagZero_logic:ZeroFlag
 y[0] => WideNor0.IN0
 y[1] => WideNor0.IN1
@@ -604,5 +604,16 @@ y[5] => WideNor0.IN5
 y[6] => WideNor0.IN6
 y[7] => WideNor0.IN7
 z <= WideNor0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|flagVB_logic:VFlag
+so3 => H.IN0
+so2 => H.IN1
+so1 => H.IN1
+yn1 => J.IN0
+an1 => J.IN1
+an1 => K.IN0
+bn1 => K.IN1
+V <= V.DB_MAX_OUTPUT_PORT_TYPE
 
 

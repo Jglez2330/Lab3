@@ -7,56 +7,133 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/lab3_git/simulation/modelsim
-vand_N
+Z0 dC:/Proyectos_Quartus/Lab3/simulation/modelsim
+vflag_unit
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1589673249
+Z2 !s110 1589706845
 !i10b 1
-!s100 N>5DA_MX[MCR3nA8JObJe1
-I6PJd7O8L3MaKa9TlT2<K_1
+!s100 Qf>7H^0Z;>;4`F0Xe8CM;3
+Ihzg]IQAm?:Vd:0M1gTYWT1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 and_N_sv_unit
+!s105 flag_unit_sv_unit
 S1
 R0
-Z4 w1589472726
-8C:/lab3_git/and_N.sv
-FC:/lab3_git/and_N.sv
+w1589706614
+8C:/Proyectos_Quartus/Lab3/flag_unit.sv
+FC:/Proyectos_Quartus/Lab3/flag_unit.sv
 L0 3
-Z5 OV;L;10.5b;63
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1589673249.000000
-!s107 C:/lab3_git/and_N.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/and_N.sv|
+Z5 !s108 1589706844.000000
+!s107 C:/Proyectos_Quartus/Lab3/flag_unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/flag_unit.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/lab3_git
-Z9 tCvgOpt 0
-nand_@n
-vand_N_TestBench
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Proyectos_Quartus/Lab3
+Z8 tCvgOpt 0
+vflagV_logic_TestBench
 R1
 R2
 !i10b 1
-!s100 =Ng=A[So4bL9V]_]LOG2O3
-I?OXMzR6`8OD0V2jAz;7l@2
+!s100 >MY;23k=o]JiGU0oc144V1
+I5UD`S=GXBVZajjjNf>bON1
 R3
-!s105 and_N_TestBench_sv_unit
+!s105 flagV_logic_TestBench_sv_unit
 S1
 R0
+w1589706568
+8C:/Proyectos_Quartus/Lab3/flagV_logic_TestBench.sv
+FC:/Proyectos_Quartus/Lab3/flagV_logic_TestBench.sv
+L0 4
 R4
-8C:/lab3_git/and_N_TestBench.sv
-FC:/lab3_git/and_N_TestBench.sv
-L0 3
-R5
 r1
 !s85 0
 31
-R6
-!s107 C:/lab3_git/and_N_TestBench.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/and_N_TestBench.sv|
+Z9 !s108 1589706845.000000
+!s107 C:/Proyectos_Quartus/Lab3/flagV_logic_TestBench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/flagV_logic_TestBench.sv|
 !i113 1
+R6
 R7
 R8
+nflag@v_logic_@test@bench
+vflagVB_logic
+R1
+R2
+!i10b 1
+!s100 B9<g^fBHomnUKg@k=Bj;f3
+I0nTFbk]E5QlRG3<X`j4LF1
+R3
+!s105 flagVB_logic_sv_unit
+S1
+R0
+w1589706511
+8C:/Proyectos_Quartus/Lab3/flagVB_logic.sv
+FC:/Proyectos_Quartus/Lab3/flagVB_logic.sv
+L0 3
+R4
+r1
+!s85 0
+31
 R9
-nand_@n_@test@bench
+!s107 C:/Proyectos_Quartus/Lab3/flagVB_logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/flagVB_logic.sv|
+!i113 1
+R6
+R7
+R8
+nflag@v@b_logic
+vflagZero_logic
+R1
+Z10 !s110 1589706844
+!i10b 1
+!s100 RBmA5RY6Po^0F_5;6BN7>0
+IoKBQZQg2>JgOUc8]__H3D1
+R3
+!s105 flagZero_logic_sv_unit
+S1
+R0
+w1589703754
+8C:/Proyectos_Quartus/Lab3/flagZero_logic.sv
+FC:/Proyectos_Quartus/Lab3/flagZero_logic.sv
+L0 7
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Proyectos_Quartus/Lab3/flagZero_logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/flagZero_logic.sv|
+!i113 1
+R6
+R7
+R8
+nflag@zero_logic
+vflagZero_logic_TestBench
+R1
+R10
+!i10b 1
+!s100 _Z:PRhgQI8;SahA^nP]jb0
+IcaU7n^?FX@kBd]1SNJkRG2
+R3
+!s105 flagZero_logic_TestBench_sv_unit
+S1
+R0
+w1589479523
+8C:/Proyectos_Quartus/Lab3/flagZero_logic_TestBench.sv
+FC:/Proyectos_Quartus/Lab3/flagZero_logic_TestBench.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Proyectos_Quartus/Lab3/flagZero_logic_TestBench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/flagZero_logic_TestBench.sv|
+!i113 1
+R6
+R7
+R8
+nflag@zero_logic_@test@bench
