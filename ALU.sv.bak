@@ -1,0 +1,14 @@
+module ALU #(parameter NBits = 8) (input logic [3 : 0] selection, 
+												input logic [NBits - 1 : 0] A,
+												input logic [NBits - 1 : 0] B,
+												input logic carry_in,
+												output logic zero,
+												output logic overflow,
+												output logic negative,
+												output logic carry_out.
+												output logic [NBits - 1: 0] result);
+												
+logic [1:0] cout;
+logic [NBits - 1 : 0] resultAdder
+OneBitFullAdder DUT (.A(A), .B(B), .cin(cin), .cout(cout[0]), .result(resultAdder));
+endmodule 

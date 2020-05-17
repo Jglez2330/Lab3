@@ -10,69 +10,34 @@
 # Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/flagZero_logic.sv}
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/and_N.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:01:23 on May 14,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/flagZero_logic.sv 
-# -- Compiling module flagZero_logic
+# Start time: 17:54:09 on May 16,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/and_N.sv 
+# -- Compiling module and_N
 # 
 # Top level modules:
-# 	flagZero_logic
-# End time: 12:01:23 on May 14,2020, Elapsed time: 0:00:00
+# 	and_N
+# End time: 17:54:09 on May 16,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/flagZero_logic_TestBench.sv}
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/and_N_TestBench.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:01:23 on May 14,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/flagZero_logic_TestBench.sv 
-# -- Compiling module flagZero_logic_TestBench
+# Start time: 17:54:09 on May 16,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/and_N_TestBench.sv 
+# -- Compiling module and_N_TestBench
 # 
 # Top level modules:
-# 	flagZero_logic_TestBench
-# End time: 12:01:23 on May 14,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/flag_unit.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:01:23 on May 14,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/flag_unit.sv 
-# -- Compiling module flag_unit
-# 
-# Top level modules:
-# 	flag_unit
-# End time: 12:01:23 on May 14,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/flagV_logic_TestBench.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:01:23 on May 14,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/flagV_logic_TestBench.sv 
-# -- Compiling module flagV_logic_TestBench
-# 
-# Top level modules:
-# 	flagV_logic_TestBench
-# End time: 12:01:23 on May 14,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/flagVB_logic.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:01:23 on May 14,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/flagVB_logic.sv 
-# -- Compiling module flagVB_logic
-# 
-# Top level modules:
-# 	flagVB_logic
-# End time: 12:01:23 on May 14,2020, Elapsed time: 0:00:00
+# 	and_N_TestBench
+# End time: 17:54:09 on May 16,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.flagV_logic_TestBench
-# vsim work.flagV_logic_TestBench 
-# Start time: 12:01:41 on May 14,2020
+vsim work.and_N_TestBench
+# vsim work.and_N_TestBench 
+# Start time: 17:55:30 on May 16,2020
 # Loading sv_std.std
-# Loading work.flagV_logic_TestBench
-# Loading work.flagVB_logic
-add wave -position end  sim:/flagV_logic_TestBench/so2
-add wave -position end  sim:/flagV_logic_TestBench/so1
-add wave -position end  sim:/flagV_logic_TestBench/yn1
-add wave -position end  sim:/flagV_logic_TestBench/an1
-add wave -position end  sim:/flagV_logic_TestBench/bn1
-add wave -position end  sim:/flagV_logic_TestBench/V
-run -all
-# End time: 12:02:11 on May 14,2020, Elapsed time: 0:00:30
+# Loading work.and_N_TestBench
+# Loading work.and_N
+add wave -position insertpoint sim:/and_N_TestBench/DUT/*
+run
+# End time: 17:56:23 on May 16,2020, Elapsed time: 0:00:53
 # Errors: 0, Warnings: 0
