@@ -201,5 +201,42 @@ A = 4'b0111; B = 4'h1; #10;
 assert (result  === 4'b0011) else $error("Corrimiento Derecho aritmetico 0111 >> 1  fallo");
 
 //----------------------------------------------------------------------
+
+//-------------------------Flags----------------------------------------
+
+//Zero
+
+selection = 4'h1;
+A = 4'h1; B = 4'h1; #10;
+assert (zero  === 4'h1) else $error("Flag zero fallo");
+
+//Carry out
+
+selection = 4'h0;
+A = 4'hF; B = 4'h1; #10;
+assert (carry_out  === 4'h1) else $error("Flag carry_out fallo");
+
+//Overflow
+
+selection = 4'h0;
+A = 4'h7; B = 4'h1; #10;
+assert (overflow  === 4'h1) else $error("Flag overflow fallo");
+
+//Carry out and overflow
+
+selection = 4'h1;
+A = 4'hF; B = 4'h8; #10;
+assert (carry_out  === 4'h1) else $error("Flag carry_out fallo");
+assert (overflow  === 4'h1) else $error("Flag overflow  fallo");
+
+//Negative
+B = 4'h0; #10;
+assert (negative  === 4'h1) else $error("Flag Negative fallo");
+
+//Carry_out
+A = 4'hE; B = 4'h2; #10;
+assert (carry_out  === 4'h1) else $error("Flag carry_out fallo");
+
+//----------------------------------------------------------------------
 end
 endmodule 
