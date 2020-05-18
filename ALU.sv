@@ -15,16 +15,10 @@ logic [NBits - 1 : 0] resultAND;
 logic [NBits - 1 : 0] resultOR;
 logic [NBits - 1 : 0] resultNOT;
 logic [NBits - 1 : 0] resultXOR;
-logic [NBits - 1 : 0] g;
-logic [NBits - 1 : 0] h;
-logic [NBits - 1 : 0] i;
-logic [NBits - 1 : 0] j;
-logic [NBits - 1 : 0] k;
-logic [NBits - 1 : 0] l;
-logic [NBits - 1 : 0] m;
-logic [NBits - 1 : 0] n;
-logic [NBits - 1 : 0] o;
-logic [NBits - 1 : 0] p;
+logic [NBits - 1 : 0] resultLShiftLogic;
+logic [NBits - 1 : 0] resultRShiftLogic;
+logic [NBits - 1 : 0] resultRShiftArithmetic;
+
 
 //Operaciones Aritméticas
 
@@ -42,7 +36,9 @@ xor_N	#(.N(NBits)) XOR (.a(A), .b(B), .y(resultXOR));
 
 MUX_N #(.NBITS(NBits)) Mux  (.A(resultAdder), .B(resultSubstractor),
 										.C(resultAND), .D(resultOR), 
-										.E(resultNOT), .F(resultXOR), .nOUT(result), .selection(selection));
+										.E(resultNOT), .F(resultXOR),
+										.G(resultLShiftLogic), .H(resultRShiftLogic),
+										.I(resultRShiftArithmetic),.nOUT(result), .selection(selection));
 										
 MUX_N #(.NBITS(1)) MuxCarryOut  (.A(cout[0]), .B(cout[1]),
 										.nOUT(carry_out), .selection(selection));
@@ -54,7 +50,9 @@ flagZero_logic #(.N(NBits)) ZeroFlag (.y(result),.z(zero));
 assign negative = result[NBits - 1];
 flagVB_logic VFlag (.so3(selection[3]), .so2(selection[2]), .so1(selection[1]), .yn1(result[NBits-1]), .an1(A[NBits-1]), .bn1(B[NBits-1]), .V(overflow));
 
+shift_left #(.bus(NBits)) LeftShiftLogic (.a(A),.b(B), .y(resultLShiftLogic));
 
+shift_right #(.bus(NBits)) RightShiftLogic (.a(A),.b(B), .y(resultRShiftLogic));
 
-
+shift_right_arithmetic #(.bus(NBits)) RightShiftArithmetic (.a(A),.b(B), .y(resultRShiftArithmetic));
 endmodule 

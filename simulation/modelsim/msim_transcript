@@ -10,70 +10,225 @@
 # Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/flagZero_logic.sv}
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/shift_right_arithmetic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:14:04 on May 17,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/flagZero_logic.sv 
+# Start time: 19:21:54 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/shift_right_arithmetic.sv 
+# -- Compiling module shift_right_arithmetic
+# 
+# Top level modules:
+# 	shift_right_arithmetic
+# End time: 19:21:54 on May 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/shift_right.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:21:54 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/shift_right.sv 
+# -- Compiling module shift_right
+# 
+# Top level modules:
+# 	shift_right
+# End time: 19:21:54 on May 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/shift_left.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:21:54 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/shift_left.sv 
+# -- Compiling module shift_left
+# 
+# Top level modules:
+# 	shift_left
+# End time: 19:21:55 on May 17,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/OneBitFullAdder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:21:55 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/OneBitFullAdder.sv 
+# -- Compiling module OneBitFullAdder
+# 
+# Top level modules:
+# 	OneBitFullAdder
+# End time: 19:21:55 on May 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/NBitsFullSubstractor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:21:55 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/NBitsFullSubstractor.sv 
+# -- Compiling module NBitsFullSubstractor
+# 
+# Top level modules:
+# 	NBitsFullSubstractor
+# End time: 19:21:55 on May 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/NBitsFullAdder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:21:55 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/NBitsFullAdder.sv 
+# -- Compiling module NBitsFullAdder
+# 
+# Top level modules:
+# 	NBitsFullAdder
+# End time: 19:21:55 on May 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/MUX_N.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:21:55 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/MUX_N.sv 
+# -- Compiling module MUX_N
+# 
+# Top level modules:
+# 	MUX_N
+# End time: 19:21:55 on May 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/and_N.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:21:55 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/and_N.sv 
+# -- Compiling module and_N
+# 
+# Top level modules:
+# 	and_N
+# End time: 19:21:55 on May 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/or_N.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:21:55 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/or_N.sv 
+# -- Compiling module or_N
+# 
+# Top level modules:
+# 	or_N
+# End time: 19:21:55 on May 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/xor_N.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:21:55 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/xor_N.sv 
+# -- Compiling module xor_N
+# 
+# Top level modules:
+# 	xor_N
+# End time: 19:21:56 on May 17,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/notA_N.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:21:56 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/notA_N.sv 
+# -- Compiling module notA_N
+# 
+# Top level modules:
+# 	notA_N
+# End time: 19:21:56 on May 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/flagZero_logic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:21:56 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/flagZero_logic.sv 
 # -- Compiling module flagZero_logic
 # 
 # Top level modules:
 # 	flagZero_logic
-# End time: 03:14:04 on May 17,2020, Elapsed time: 0:00:00
+# End time: 19:21:56 on May 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/flagZero_logic_TestBench.sv}
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/flagVB_logic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:14:04 on May 17,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/flagZero_logic_TestBench.sv 
-# -- Compiling module flagZero_logic_TestBench
-# 
-# Top level modules:
-# 	flagZero_logic_TestBench
-# End time: 03:14:04 on May 17,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/flag_unit.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:14:04 on May 17,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/flag_unit.sv 
-# -- Compiling module flag_unit
-# 
-# Top level modules:
-# 	flag_unit
-# End time: 03:14:05 on May 17,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/flagV_logic_TestBench.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:14:05 on May 17,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/flagV_logic_TestBench.sv 
-# -- Compiling module flagV_logic_TestBench
-# 
-# Top level modules:
-# 	flagV_logic_TestBench
-# End time: 03:14:05 on May 17,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Proyectos_Quartus/Lab3 {C:/Proyectos_Quartus/Lab3/flagVB_logic.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:14:05 on May 17,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Proyectos_Quartus/Lab3" C:/Proyectos_Quartus/Lab3/flagVB_logic.sv 
+# Start time: 19:21:56 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/flagVB_logic.sv 
 # -- Compiling module flagVB_logic
 # 
 # Top level modules:
 # 	flagVB_logic
-# End time: 03:14:05 on May 17,2020, Elapsed time: 0:00:00
+# End time: 19:21:56 on May 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:21:56 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/ALU.sv 
+# -- Compiling module ALU
 # 
-vsim work.flagV_logic_TestBench
-# vsim work.flagV_logic_TestBench 
-# Start time: 03:14:47 on May 17,2020
-# Loading sv_std.std
-# Loading work.flagV_logic_TestBench
-# Loading work.flagVB_logic
-add wave -position end  sim:/flagV_logic_TestBench/so3
-add wave -position end  sim:/flagV_logic_TestBench/so2
-add wave -position end  sim:/flagV_logic_TestBench/so1
-add wave -position end  sim:/flagV_logic_TestBench/yn1
-add wave -position end  sim:/flagV_logic_TestBench/an1
-add wave -position end  sim:/flagV_logic_TestBench/bn1
-add wave -position end  sim:/flagV_logic_TestBench/V
-run -all
-# End time: 03:16:14 on May 17,2020, Elapsed time: 0:01:27
+# Top level modules:
+# 	ALU
+# End time: 19:21:56 on May 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/lab3_git {C:/lab3_git/ALU_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:21:56 on May 17,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/lab3_git" C:/lab3_git/ALU_tb.sv 
+# -- Compiling module ALU_tb
+# ** Warning: C:/lab3_git/ALU_tb.sv(54): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/lab3_git/ALU_tb.sv(59): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	ALU_tb
+# End time: 19:21:56 on May 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# 
+vsim work.ALU_tb
+# vsim work.ALU_tb 
+# Start time: 19:22:08 on May 17,2020
+# Loading sv_std.std
+# Loading work.ALU_tb
+# Loading work.ALU
+# Loading work.NBitsFullAdder
+# Loading work.NBitsFullSubstractor
+# Loading work.and_N
+# Loading work.or_N
+# Loading work.notA_N
+# Loading work.xor_N
+# Loading work.MUX_N
+# Loading work.flagZero_logic
+# Loading work.flagVB_logic
+# Loading work.shift_left
+# Loading work.shift_right
+# Loading work.shift_right_arithmetic
+# Loading work.OneBitFullAdder
+# ** Warning: (vsim-3017) C:/lab3_git/ALU.sv(37): [TFMPC] - Too few port connections. Expected 18, found 11.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/DUT/Mux File: C:/lab3_git/MUX_N.sv
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(37): [TFMPC] - Missing connection for port 'J'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(37): [TFMPC] - Missing connection for port 'K'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(37): [TFMPC] - Missing connection for port 'L'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(37): [TFMPC] - Missing connection for port 'M'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(37): [TFMPC] - Missing connection for port 'N'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(37): [TFMPC] - Missing connection for port 'O'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(37): [TFMPC] - Missing connection for port 'P'.
+# ** Warning: (vsim-3017) C:/lab3_git/ALU.sv(43): [TFMPC] - Too few port connections. Expected 18, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_tb/DUT/MuxCarryOut File: C:/lab3_git/MUX_N.sv
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(43): [TFMPC] - Missing connection for port 'C'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(43): [TFMPC] - Missing connection for port 'D'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(43): [TFMPC] - Missing connection for port 'E'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(43): [TFMPC] - Missing connection for port 'F'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(43): [TFMPC] - Missing connection for port 'G'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(43): [TFMPC] - Missing connection for port 'H'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(43): [TFMPC] - Missing connection for port 'I'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(43): [TFMPC] - Missing connection for port 'J'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(43): [TFMPC] - Missing connection for port 'K'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(43): [TFMPC] - Missing connection for port 'L'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(43): [TFMPC] - Missing connection for port 'M'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(43): [TFMPC] - Missing connection for port 'N'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(43): [TFMPC] - Missing connection for port 'O'.
+# ** Warning: (vsim-3722) C:/lab3_git/ALU.sv(43): [TFMPC] - Missing connection for port 'P'.
+add wave -position insertpoint sim:/ALU_tb/DUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Joseph González  Hostname: DESKTOP-NQL0HTO  ProcessID: 8940
+#           Attempting to use alternate WLF file "./wlft8yibxe".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft8yibxe
+run
+# ** Error: Suma de 3 + 2 fallo
+#    Time: 0 ps  Scope: ALU_tb File: C:/lab3_git/ALU_tb.sv Line: 27
+# ** Error: Suma de 3 + 2 + cin = 1 fallo
+#    Time: 10 ps  Scope: ALU_tb File: C:/lab3_git/ALU_tb.sv Line: 31
+# ** Error: Suma de 3 + -2  fallo
+#    Time: 20 ps  Scope: ALU_tb File: C:/lab3_git/ALU_tb.sv Line: 37
+# ** Error: Suma de -3 + 2  fallo
+#    Time: 30 ps  Scope: ALU_tb File: C:/lab3_git/ALU_tb.sv Line: 43
+# ** Error: Suma de -3 + 2  fallo
+#    Time: 40 ps  Scope: ALU_tb File: C:/lab3_git/ALU_tb.sv Line: 48
+# ** Error: Suma de -3 + -2  fallo
+#    Time: 50 ps  Scope: ALU_tb File: C:/lab3_git/ALU_tb.sv Line: 54
+# ** Error: Suma de 7 + 1  fallo
+#    Time: 60 ps  Scope: ALU_tb File: C:/lab3_git/ALU_tb.sv Line: 59
+# ** Error: Suma de 7 + 1  fallo overflow
+#    Time: 60 ps  Scope: ALU_tb File: C:/lab3_git/ALU_tb.sv Line: 60
+# End time: 19:23:20 on May 17,2020, Elapsed time: 0:01:12
+# Errors: 8, Warnings: 25

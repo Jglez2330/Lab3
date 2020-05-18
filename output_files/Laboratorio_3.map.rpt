@@ -1,5 +1,5 @@
-Analysis & Synthesis report for Laboratorio_3
-Sun May 17 03:17:11 2020
+Analysis & Elaboration report for Laboratorio_3
+Sun May 17 19:21:48 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -7,30 +7,27 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
- 11. Parameter Settings for User Entity Instance: NBitsFullAdder:Adder
- 12. Parameter Settings for User Entity Instance: NBitsFullSubstractor:Substractor
- 13. Parameter Settings for User Entity Instance: and_N:And
- 14. Parameter Settings for User Entity Instance: or_N:OR
- 15. Parameter Settings for User Entity Instance: notA_N:NOT
- 16. Parameter Settings for User Entity Instance: xor_N:XOR
- 17. Parameter Settings for User Entity Instance: MUX_N:Mux
- 18. Parameter Settings for User Entity Instance: MUX_N:MuxCarryOut
- 19. Parameter Settings for User Entity Instance: flagZero_logic:ZeroFlag
- 20. Port Connectivity Checks: "MUX_N:MuxCarryOut"
- 21. Port Connectivity Checks: "MUX_N:Mux"
- 22. Port Connectivity Checks: "NBitsFullSubstractor:Substractor|OneBitFullAdder:GenAdders[0].U1"
- 23. Post-Synthesis Netlist Statistics for Top Partition
- 24. Elapsed Time Per Partition
- 25. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: ALU:DUT
+  5. Parameter Settings for User Entity Instance: ALU:DUT|NBitsFullAdder:Adder
+  6. Parameter Settings for User Entity Instance: ALU:DUT|NBitsFullSubstractor:Substractor
+  7. Parameter Settings for User Entity Instance: ALU:DUT|and_N:And
+  8. Parameter Settings for User Entity Instance: ALU:DUT|or_N:OR
+  9. Parameter Settings for User Entity Instance: ALU:DUT|notA_N:NOT
+ 10. Parameter Settings for User Entity Instance: ALU:DUT|xor_N:XOR
+ 11. Parameter Settings for User Entity Instance: ALU:DUT|MUX_N:Mux
+ 12. Parameter Settings for User Entity Instance: ALU:DUT|MUX_N:MuxCarryOut
+ 13. Parameter Settings for User Entity Instance: ALU:DUT|flagZero_logic:ZeroFlag
+ 14. Parameter Settings for User Entity Instance: ALU:DUT|shift_left:LeftShiftLogic
+ 15. Parameter Settings for User Entity Instance: ALU:DUT|shift_right:RightShiftLogic
+ 16. Parameter Settings for User Entity Instance: ALU:DUT|shift_right_arithmetic:RightShiftArithmetic
+ 17. Analysis & Elaboration Settings
+ 18. Port Connectivity Checks: "ALU:DUT|MUX_N:MuxCarryOut"
+ 19. Port Connectivity Checks: "ALU:DUT|MUX_N:Mux"
+ 20. Port Connectivity Checks: "ALU:DUT|NBitsFullSubstractor:Substractor|OneBitFullAdder:GenAdders[0].U1"
+ 21. Port Connectivity Checks: "ALU:DUT"
+ 22. Analysis & Elaboration Messages
 
 
 
@@ -54,36 +51,177 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun May 17 03:17:11 2020       ;
-; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
-; Revision Name                   ; Laboratorio_3                               ;
-; Top-level Entity Name           ; ALU                                         ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 33                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Sun May 17 19:21:48 2020       ;
+; Quartus Prime Version         ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                 ; Laboratorio_3                               ;
+; Top-level Entity Name         ; ALU_tb                                      ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; NBits          ; 4     ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|NBitsFullAdder:Adder ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; NBits          ; 4     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|NBitsFullSubstractor:Substractor ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; NBits          ; 4     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|and_N:And ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; N              ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|or_N:OR ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; N              ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|notA_N:NOT ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; N              ; 4     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|xor_N:XOR ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; N              ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|MUX_N:Mux ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; NBITS          ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|MUX_N:MuxCarryOut ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; NBITS          ; 1     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|flagZero_logic:ZeroFlag ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; N              ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|shift_left:LeftShiftLogic ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; bus            ; 4     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|shift_right:RightShiftLogic ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; bus            ; 4     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:DUT|shift_right_arithmetic:RightShiftArithmetic ;
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; bus            ; 4     ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C6F23I7     ;                    ;
-; Top-level entity name                                                           ; ALU                ; Laboratorio_3      ;
+; Top-level entity name                                                           ; ALU_tb             ; Laboratorio_3      ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -164,224 +302,8 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                          ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                      ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------+---------+
-; OneBitFullAdder.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/OneBitFullAdder.sv      ;         ;
-; NBitsFullSubstractor.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/NBitsFullSubstractor.sv ;         ;
-; NBitsFullAdder.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/NBitsFullAdder.sv       ;         ;
-; MUX_N.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/MUX_N.sv                ;         ;
-; and_N.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/and_N.sv                ;         ;
-; or_N.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/or_N.sv                 ;         ;
-; xor_N.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/xor_N.sv                ;         ;
-; notA_N.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/notA_N.sv               ;         ;
-; flagZero_logic.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/flagZero_logic.sv       ;         ;
-; flagVB_logic.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/flagVB_logic.sv         ;         ;
-; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Proyectos_Quartus/Lab3/ALU.sv                  ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------+---------+
-
-
-+------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                      ;
-+---------------------------------------------+--------------------+
-; Resource                                    ; Usage              ;
-+---------------------------------------------+--------------------+
-; Estimate of Logic utilization (ALMs needed) ; 27                 ;
-;                                             ;                    ;
-; Combinational ALUT usage for logic          ; 40                 ;
-;     -- 7 input functions                    ; 2                  ;
-;     -- 6 input functions                    ; 12                 ;
-;     -- 5 input functions                    ; 11                 ;
-;     -- 4 input functions                    ; 5                  ;
-;     -- <=3 input functions                  ; 10                 ;
-;                                             ;                    ;
-; Dedicated logic registers                   ; 0                  ;
-;                                             ;                    ;
-; I/O pins                                    ; 33                 ;
-;                                             ;                    ;
-; Total DSP Blocks                            ; 0                  ;
-;                                             ;                    ;
-; Maximum fan-out node                        ; selection[1]~input ;
-; Maximum fan-out                             ; 12                 ;
-; Total fan-out                               ; 231                ;
-; Average fan-out                             ; 2.18               ;
-+---------------------------------------------+--------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                            ;
-+-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------+----------------------+--------------+
-; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Entity Name          ; Library Name ;
-+-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------+----------------------+--------------+
-; |ALU                                    ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 33   ; 0            ; |ALU                                                                  ; ALU                  ; work         ;
-;    |MUX_N:MuxCarryOut|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|MUX_N:MuxCarryOut                                                ; MUX_N                ; work         ;
-;    |MUX_N:Mux|                          ; 20 (20)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|MUX_N:Mux                                                        ; MUX_N                ; work         ;
-;    |NBitsFullAdder:Adder|               ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullAdder:Adder                                             ; NBitsFullAdder       ; work         ;
-;       |OneBitFullAdder:GenAdders[0].U1| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullAdder:Adder|OneBitFullAdder:GenAdders[0].U1             ; OneBitFullAdder      ; work         ;
-;       |OneBitFullAdder:GenAdders[1].U1| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullAdder:Adder|OneBitFullAdder:GenAdders[1].U1             ; OneBitFullAdder      ; work         ;
-;       |OneBitFullAdder:GenAdders[2].U1| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullAdder:Adder|OneBitFullAdder:GenAdders[2].U1             ; OneBitFullAdder      ; work         ;
-;       |OneBitFullAdder:GenAdders[3].U1| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullAdder:Adder|OneBitFullAdder:GenAdders[3].U1             ; OneBitFullAdder      ; work         ;
-;       |OneBitFullAdder:GenAdders[4].U1| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullAdder:Adder|OneBitFullAdder:GenAdders[4].U1             ; OneBitFullAdder      ; work         ;
-;       |OneBitFullAdder:GenAdders[5].U1| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullAdder:Adder|OneBitFullAdder:GenAdders[5].U1             ; OneBitFullAdder      ; work         ;
-;       |OneBitFullAdder:GenAdders[6].U1| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullAdder:Adder|OneBitFullAdder:GenAdders[6].U1             ; OneBitFullAdder      ; work         ;
-;    |NBitsFullSubstractor:Substractor|   ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullSubstractor:Substractor                                 ; NBitsFullSubstractor ; work         ;
-;       |OneBitFullAdder:GenAdders[0].U1| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullSubstractor:Substractor|OneBitFullAdder:GenAdders[0].U1 ; OneBitFullAdder      ; work         ;
-;       |OneBitFullAdder:GenAdders[1].U1| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullSubstractor:Substractor|OneBitFullAdder:GenAdders[1].U1 ; OneBitFullAdder      ; work         ;
-;       |OneBitFullAdder:GenAdders[2].U1| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullSubstractor:Substractor|OneBitFullAdder:GenAdders[2].U1 ; OneBitFullAdder      ; work         ;
-;       |OneBitFullAdder:GenAdders[3].U1| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullSubstractor:Substractor|OneBitFullAdder:GenAdders[3].U1 ; OneBitFullAdder      ; work         ;
-;       |OneBitFullAdder:GenAdders[4].U1| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullSubstractor:Substractor|OneBitFullAdder:GenAdders[4].U1 ; OneBitFullAdder      ; work         ;
-;       |OneBitFullAdder:GenAdders[5].U1| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullSubstractor:Substractor|OneBitFullAdder:GenAdders[5].U1 ; OneBitFullAdder      ; work         ;
-;       |OneBitFullAdder:GenAdders[6].U1| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|NBitsFullSubstractor:Substractor|OneBitFullAdder:GenAdders[6].U1 ; OneBitFullAdder      ; work         ;
-;    |flagVB_logic:VFlag|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|flagVB_logic:VFlag                                               ; flagVB_logic         ; work         ;
-;    |flagZero_logic:ZeroFlag|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|flagZero_logic:ZeroFlag                                          ; flagZero_logic       ; work         ;
-+-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------+----------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 16:1               ; 7 bits    ; 70 LEs        ; 35 LEs               ; 35 LEs                 ; No         ; |ALU|MUX_N:Mux|Mux0        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |ALU ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; NBits          ; 8     ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: NBitsFullAdder:Adder ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; NBits          ; 8     ; Signed Integer                           ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: NBitsFullSubstractor:Substractor ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; NBits          ; 8     ; Signed Integer                                       ;
-+----------------+-------+------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: and_N:And ;
-+----------------+-------+-------------------------------+
-; Parameter Name ; Value ; Type                          ;
-+----------------+-------+-------------------------------+
-; N              ; 8     ; Signed Integer                ;
-+----------------+-------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------+
-; Parameter Settings for User Entity Instance: or_N:OR ;
-+----------------+-------+-----------------------------+
-; Parameter Name ; Value ; Type                        ;
-+----------------+-------+-----------------------------+
-; N              ; 8     ; Signed Integer              ;
-+----------------+-------+-----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: notA_N:NOT ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; N              ; 8     ; Signed Integer                 ;
-+----------------+-------+--------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: xor_N:XOR ;
-+----------------+-------+-------------------------------+
-; Parameter Name ; Value ; Type                          ;
-+----------------+-------+-------------------------------+
-; N              ; 8     ; Signed Integer                ;
-+----------------+-------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MUX_N:Mux ;
-+----------------+-------+-------------------------------+
-; Parameter Name ; Value ; Type                          ;
-+----------------+-------+-------------------------------+
-; NBITS          ; 8     ; Signed Integer                ;
-+----------------+-------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MUX_N:MuxCarryOut ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; NBITS          ; 1     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: flagZero_logic:ZeroFlag ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; N              ; 8     ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "MUX_N:MuxCarryOut"                                                                                                                          ;
+; Port Connectivity Checks: "ALU:DUT|MUX_N:MuxCarryOut"                                                                                                                  ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                      ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -403,13 +325,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "MUX_N:Mux"                                                                                                                                  ;
+; Port Connectivity Checks: "ALU:DUT|MUX_N:Mux"                                                                                                                          ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                      ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; G    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; H    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; I    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 ; J    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 ; K    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
 ; L    ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
@@ -420,139 +339,132 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "NBitsFullSubstractor:Substractor|OneBitFullAdder:GenAdders[0].U1" ;
-+------+-------+----------+--------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                            ;
-+------+-------+----------+--------------------------------------------------------------------+
-; cin  ; Input ; Info     ; Stuck at VCC                                                       ;
-+------+-------+----------+--------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:DUT|NBitsFullSubstractor:Substractor|OneBitFullAdder:GenAdders[0].U1" ;
++------+-------+----------+----------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                    ;
++------+-------+----------+----------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at VCC                                                               ;
++------+-------+----------+----------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 41                          ;
-;     extend            ; 2                           ;
-;         7 data inputs ; 2                           ;
-;     normal            ; 39                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 5                           ;
-;         5 data inputs ; 11                          ;
-;         6 data inputs ; 12                          ;
-; boundary_port         ; 33                          ;
-;                       ;                             ;
-; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 6.00                        ;
-+-----------------------+-----------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:DUT"                                                                                 ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; zero      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; negative  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; carry_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; result    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sun May 17 03:16:54 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Laboratorio_3 -c Laboratorio_3
+    Info: Processing started: Sun May 17 19:21:34 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Laboratorio_3 -c Laboratorio_3 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file shift_tb.sv
+    Info (12023): Found entity 1: shift_tb File: C:/lab3_git/shift_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file shift_right_arithmetic.sv
+    Info (12023): Found entity 1: shift_right_arithmetic File: C:/lab3_git/shift_right_arithmetic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shift_left_arithmetic.sv
+    Info (12023): Found entity 1: shift_left_arithmetic File: C:/lab3_git/shift_left_arithmetic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shift_right.sv
+    Info (12023): Found entity 1: shift_right File: C:/lab3_git/shift_right.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shift_left.sv
+    Info (12023): Found entity 1: shift_left File: C:/lab3_git/shift_left.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file onebitfulladder_tb.sv
-    Info (12023): Found entity 1: OneBitFullAdder_tb File: C:/Proyectos_Quartus/Lab3/OneBitFullAdder_tb.sv Line: 1
+    Info (12023): Found entity 1: OneBitFullAdder_tb File: C:/lab3_git/OneBitFullAdder_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file onebitfulladder.sv
-    Info (12023): Found entity 1: OneBitFullAdder File: C:/Proyectos_Quartus/Lab3/OneBitFullAdder.sv Line: 1
+    Info (12023): Found entity 1: OneBitFullAdder File: C:/lab3_git/OneBitFullAdder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file nbitsfullsubstractor_tb.sv
-    Info (12023): Found entity 1: NBitsFullSubstractor_tb File: C:/Proyectos_Quartus/Lab3/NBitsFullSubstractor_tb.sv Line: 1
+    Info (12023): Found entity 1: NBitsFullSubstractor_tb File: C:/lab3_git/NBitsFullSubstractor_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file nbitsfullsubstractor.sv
-    Info (12023): Found entity 1: NBitsFullSubstractor File: C:/Proyectos_Quartus/Lab3/NBitsFullSubstractor.sv Line: 1
+    Info (12023): Found entity 1: NBitsFullSubstractor File: C:/lab3_git/NBitsFullSubstractor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file nbitsfulladder_tb.sv
-    Info (12023): Found entity 1: NBitsFullAdder_tb File: C:/Proyectos_Quartus/Lab3/NBitsFullAdder_tb.sv Line: 1
+    Info (12023): Found entity 1: NBitsFullAdder_tb File: C:/lab3_git/NBitsFullAdder_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file nbitsfulladder.sv
-    Info (12023): Found entity 1: NBitsFullAdder File: C:/Proyectos_Quartus/Lab3/NBitsFullAdder.sv Line: 1
+    Info (12023): Found entity 1: NBitsFullAdder File: C:/lab3_git/NBitsFullAdder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_n_tb.sv
-    Info (12023): Found entity 1: MUX_N_tb File: C:/Proyectos_Quartus/Lab3/MUX_N_tb.sv Line: 1
+    Info (12023): Found entity 1: MUX_N_tb File: C:/lab3_git/MUX_N_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_n.sv
-    Info (12023): Found entity 1: MUX_N File: C:/Proyectos_Quartus/Lab3/MUX_N.sv Line: 2
+    Info (12023): Found entity 1: MUX_N File: C:/lab3_git/MUX_N.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file addernbits.sv
-    Info (12023): Found entity 1: AdderNBits File: C:/Proyectos_Quartus/Lab3/AdderNBits.sv Line: 1
+    Info (12023): Found entity 1: AdderNBits File: C:/lab3_git/AdderNBits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file and_n.sv
-    Info (12023): Found entity 1: and_N File: C:/Proyectos_Quartus/Lab3/and_N.sv Line: 3
+    Info (12023): Found entity 1: and_N File: C:/lab3_git/and_N.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file or_n.sv
-    Info (12023): Found entity 1: or_N File: C:/Proyectos_Quartus/Lab3/or_N.sv Line: 3
+    Info (12023): Found entity 1: or_N File: C:/lab3_git/or_N.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file xor_n.sv
-    Info (12023): Found entity 1: xor_N File: C:/Proyectos_Quartus/Lab3/xor_N.sv Line: 3
+    Info (12023): Found entity 1: xor_N File: C:/lab3_git/xor_N.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file nota_n.sv
-    Info (12023): Found entity 1: notA_N File: C:/Proyectos_Quartus/Lab3/notA_N.sv Line: 3
+    Info (12023): Found entity 1: notA_N File: C:/lab3_git/notA_N.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file logic_unit.sv
-    Info (12023): Found entity 1: logic_unit File: C:/Proyectos_Quartus/Lab3/logic_unit.sv Line: 3
+    Info (12023): Found entity 1: logic_unit File: C:/lab3_git/logic_unit.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file and_n_testbench.sv
-    Info (12023): Found entity 1: and_N_TestBench File: C:/Proyectos_Quartus/Lab3/and_N_TestBench.sv Line: 3
+    Info (12023): Found entity 1: and_N_TestBench File: C:/lab3_git/and_N_TestBench.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file or_n_-testbench.sv
-    Info (12023): Found entity 1: or_N_TestBench File: C:/Proyectos_Quartus/Lab3/or_N_-TestBench.sv Line: 3
+    Info (12023): Found entity 1: or_N_TestBench File: C:/lab3_git/or_N_-TestBench.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file xor_n_testbench.sv
-    Info (12023): Found entity 1: xor_N_TestBench File: C:/Proyectos_Quartus/Lab3/xor_N_TestBench.sv Line: 3
+    Info (12023): Found entity 1: xor_N_TestBench File: C:/lab3_git/xor_N_TestBench.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file nota_n_testbench.sv
-    Info (12023): Found entity 1: notA_N_TestBench File: C:/Proyectos_Quartus/Lab3/notA_N_TestBench.sv Line: 3
+    Info (12023): Found entity 1: notA_N_TestBench File: C:/lab3_git/notA_N_TestBench.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file flagzero_logic.sv
-    Info (12023): Found entity 1: flagZero_logic File: C:/Proyectos_Quartus/Lab3/flagZero_logic.sv Line: 7
+    Info (12023): Found entity 1: flagZero_logic File: C:/lab3_git/flagZero_logic.sv Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file flagzero_logic_testbench.sv
-    Info (12023): Found entity 1: flagZero_logic_TestBench File: C:/Proyectos_Quartus/Lab3/flagZero_logic_TestBench.sv Line: 3
+    Info (12023): Found entity 1: flagZero_logic_TestBench File: C:/lab3_git/flagZero_logic_TestBench.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file flag_unit.sv
-    Info (12023): Found entity 1: flag_unit File: C:/Proyectos_Quartus/Lab3/flag_unit.sv Line: 3
+    Info (12023): Found entity 1: flag_unit File: C:/lab3_git/flag_unit.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file nor_2.sv
-    Info (12023): Found entity 1: nor_2 File: C:/Proyectos_Quartus/Lab3/nor_2.sv Line: 3
+    Info (12023): Found entity 1: nor_2 File: C:/lab3_git/nor_2.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file xor_2.sv
-    Info (12023): Found entity 1: xor_2 File: C:/Proyectos_Quartus/Lab3/xor_2.sv Line: 4
+    Info (12023): Found entity 1: xor_2 File: C:/lab3_git/xor_2.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file xnor_2.sv
-    Info (12023): Found entity 1: xnor_2 File: C:/Proyectos_Quartus/Lab3/xnor_2.sv Line: 4
+    Info (12023): Found entity 1: xnor_2 File: C:/lab3_git/xnor_2.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file and__3.sv
-    Info (12023): Found entity 1: and_3 File: C:/Proyectos_Quartus/Lab3/and__3.sv Line: 4
+    Info (12023): Found entity 1: and_3 File: C:/lab3_git/and__3.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file flagv_logic.sv
-    Info (12023): Found entity 1: flagV_logic File: C:/Proyectos_Quartus/Lab3/flagV_logic.sv Line: 3
+    Info (12023): Found entity 1: flagV_logic File: C:/lab3_git/flagV_logic.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file flagv_logic_testbench.sv
-    Info (12023): Found entity 1: flagV_logic_TestBench File: C:/Proyectos_Quartus/Lab3/flagV_logic_TestBench.sv Line: 4
+    Info (12023): Found entity 1: flagV_logic_TestBench File: C:/lab3_git/flagV_logic_TestBench.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file flagvb_logic.sv
-    Info (12023): Found entity 1: flagVB_logic File: C:/Proyectos_Quartus/Lab3/flagVB_logic.sv Line: 3
+    Info (12023): Found entity 1: flagVB_logic File: C:/lab3_git/flagVB_logic.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Proyectos_Quartus/Lab3/ALU.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at xnor_2.sv(7): created implicit net for "J" File: C:/Proyectos_Quartus/Lab3/xnor_2.sv Line: 7
-Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Info (12128): Elaborating entity "NBitsFullAdder" for hierarchy "NBitsFullAdder:Adder" File: C:/Proyectos_Quartus/Lab3/ALU.sv Line: 31
-Info (12128): Elaborating entity "OneBitFullAdder" for hierarchy "NBitsFullAdder:Adder|OneBitFullAdder:GenAdders[0].U1" File: C:/Proyectos_Quartus/Lab3/NBitsFullAdder.sv Line: 13
-Info (12128): Elaborating entity "NBitsFullSubstractor" for hierarchy "NBitsFullSubstractor:Substractor" File: C:/Proyectos_Quartus/Lab3/ALU.sv Line: 32
-Info (12128): Elaborating entity "and_N" for hierarchy "and_N:And" File: C:/Proyectos_Quartus/Lab3/ALU.sv Line: 36
-Info (12128): Elaborating entity "or_N" for hierarchy "or_N:OR" File: C:/Proyectos_Quartus/Lab3/ALU.sv Line: 37
-Info (12128): Elaborating entity "notA_N" for hierarchy "notA_N:NOT" File: C:/Proyectos_Quartus/Lab3/ALU.sv Line: 38
-Info (12128): Elaborating entity "xor_N" for hierarchy "xor_N:XOR" File: C:/Proyectos_Quartus/Lab3/ALU.sv Line: 39
-Info (12128): Elaborating entity "MUX_N" for hierarchy "MUX_N:Mux" File: C:/Proyectos_Quartus/Lab3/ALU.sv Line: 45
-Info (12128): Elaborating entity "MUX_N" for hierarchy "MUX_N:MuxCarryOut" File: C:/Proyectos_Quartus/Lab3/ALU.sv Line: 48
-Info (12128): Elaborating entity "flagZero_logic" for hierarchy "flagZero_logic:ZeroFlag" File: C:/Proyectos_Quartus/Lab3/ALU.sv Line: 53
-Info (12128): Elaborating entity "flagVB_logic" for hierarchy "flagVB_logic:VFlag" File: C:/Proyectos_Quartus/Lab3/ALU.sv Line: 55
+    Info (12023): Found entity 1: ALU File: C:/lab3_git/ALU.sv Line: 1
+Warning (10229): Verilog HDL Expression warning at ALU_tb.sv(54): truncated literal to match 4 bits File: C:/lab3_git/ALU_tb.sv Line: 54
+Warning (10229): Verilog HDL Expression warning at ALU_tb.sv(59): truncated literal to match 4 bits File: C:/lab3_git/ALU_tb.sv Line: 59
+Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
+    Info (12023): Found entity 1: ALU_tb File: C:/lab3_git/ALU_tb.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at xnor_2.sv(7): created implicit net for "J" File: C:/lab3_git/xnor_2.sv Line: 7
+Info (12127): Elaborating entity "ALU_tb" for the top level hierarchy
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:DUT" File: C:/lab3_git/ALU_tb.sv Line: 17
+Info (12128): Elaborating entity "NBitsFullAdder" for hierarchy "ALU:DUT|NBitsFullAdder:Adder" File: C:/lab3_git/ALU.sv Line: 25
+Info (12128): Elaborating entity "OneBitFullAdder" for hierarchy "ALU:DUT|NBitsFullAdder:Adder|OneBitFullAdder:GenAdders[0].U1" File: C:/lab3_git/NBitsFullAdder.sv Line: 13
+Info (12128): Elaborating entity "NBitsFullSubstractor" for hierarchy "ALU:DUT|NBitsFullSubstractor:Substractor" File: C:/lab3_git/ALU.sv Line: 26
+Info (12128): Elaborating entity "and_N" for hierarchy "ALU:DUT|and_N:And" File: C:/lab3_git/ALU.sv Line: 30
+Info (12128): Elaborating entity "or_N" for hierarchy "ALU:DUT|or_N:OR" File: C:/lab3_git/ALU.sv Line: 31
+Info (12128): Elaborating entity "notA_N" for hierarchy "ALU:DUT|notA_N:NOT" File: C:/lab3_git/ALU.sv Line: 32
+Info (12128): Elaborating entity "xor_N" for hierarchy "ALU:DUT|xor_N:XOR" File: C:/lab3_git/ALU.sv Line: 33
+Info (12128): Elaborating entity "MUX_N" for hierarchy "ALU:DUT|MUX_N:Mux" File: C:/lab3_git/ALU.sv Line: 41
+Info (12128): Elaborating entity "MUX_N" for hierarchy "ALU:DUT|MUX_N:MuxCarryOut" File: C:/lab3_git/ALU.sv Line: 44
+Info (12128): Elaborating entity "flagZero_logic" for hierarchy "ALU:DUT|flagZero_logic:ZeroFlag" File: C:/lab3_git/ALU.sv Line: 49
+Info (12128): Elaborating entity "flagVB_logic" for hierarchy "ALU:DUT|flagVB_logic:VFlag" File: C:/lab3_git/ALU.sv Line: 51
+Info (12128): Elaborating entity "shift_left" for hierarchy "ALU:DUT|shift_left:LeftShiftLogic" File: C:/lab3_git/ALU.sv Line: 53
+Info (12128): Elaborating entity "shift_right" for hierarchy "ALU:DUT|shift_right:RightShiftLogic" File: C:/lab3_git/ALU.sv Line: 55
+Info (12128): Elaborating entity "shift_right_arithmetic" for hierarchy "ALU:DUT|shift_right_arithmetic:RightShiftArithmetic" File: C:/lab3_git/ALU.sv Line: 57
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 73 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 21 input pins
-    Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 40 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4807 megabytes
-    Info: Processing ended: Sun May 17 03:17:11 2020
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:40
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4790 megabytes
+    Info: Processing ended: Sun May 17 19:21:48 2020
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:34
 
 
