@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/lab3_git/simulation/modelsim
 vALU
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1589795181
+Z2 !s110 1589798818
 !i10b 1
 !s100 QLzL2de1Jc^A3>C1embnU0
 Icd?[0Dgl:LlE]4k<E1m:U1
@@ -26,7 +26,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1589795181.000000
+Z5 !s108 1589798818.000000
 !s107 C:/lab3_git/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/ALU.sv|
 !i113 1
@@ -38,13 +38,13 @@ vALU_tb
 R1
 R2
 !i10b 1
-!s100 ]bMS_nEC?b2?7z6WeU?J>3
-I]nGV3c]X:H]1kOOWFPFWS0
+!s100 o`SB:G]1T6S8L0Qb1`kSL1
+IcRC2a;BiaaGh@RHka36Cm2
 R3
 !s105 ALU_tb_sv_unit
 S1
 R0
-w1589795156
+w1589798779
 8C:/lab3_git/ALU_tb.sv
 FC:/lab3_git/ALU_tb.sv
 L0 1
@@ -62,7 +62,7 @@ R8
 n@a@l@u_tb
 vand_N
 R1
-Z9 !s110 1589795180
+Z9 !s110 1589798817
 !i10b 1
 !s100 N>5DA_MX[MCR3nA8JObJe1
 I6PJd7O8L3MaKa9TlT2<K_1
@@ -78,7 +78,7 @@ R4
 r1
 !s85 0
 31
-Z11 !s108 1589795180.000000
+Z11 !s108 1589798817.000000
 !s107 C:/lab3_git/and_N.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/and_N.sv|
 !i113 1
@@ -234,7 +234,7 @@ R4
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/lab3_git/notA_N.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/notA_N.sv|
 !i113 1
@@ -244,7 +244,7 @@ R8
 nnot@a_@n
 vOneBitFullAdder
 R1
-R9
+Z13 !s110 1589798816
 !i10b 1
 !s100 O_R>eaOXe2<DgW_:_PgF01
 IB3U?7LER>VUBcR>5KW4kN2
@@ -260,7 +260,7 @@ R4
 r1
 !s85 0
 31
-R11
+Z14 !s108 1589798816.000000
 !s107 C:/lab3_git/OneBitFullAdder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/OneBitFullAdder.sv|
 !i113 1
@@ -296,7 +296,7 @@ R8
 nor_@n
 vshift_left
 R1
-Z13 !s110 1589795179
+R13
 !i10b 1
 !s100 SKjkjn8UOZYicL7Lc:4>W3
 I?1K84CmInNBGAQ`1g1`_U0
@@ -312,7 +312,7 @@ R4
 r1
 !s85 0
 31
-Z14 !s108 1589795179.000000
+R14
 !s107 C:/lab3_git/shift_left.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/shift_left.sv|
 !i113 1
@@ -371,7 +371,7 @@ R7
 R8
 vxor_N
 R1
-R2
+R9
 !i10b 1
 !s100 UMjQc=hkMBBWD^m2OhnD10
 IJhR8RKFMz:i8k`nNnelPZ1

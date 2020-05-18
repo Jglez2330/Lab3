@@ -89,7 +89,117 @@ assert (result  === 4'b1110) else $error("Resta de 0 - 2  fallo");
 
 A = 4'h5; B = 4'h0; #10;
 assert (result  === 4'h5) else $error("Resta de 5 - 0  fallo");
+
+// 5 - 1
+
+A = 4'h5; B = 4'h1; #10;
+assert (result  === 4'h4) else $error("Resta de 5 - 1  fallo");
+
 //----------------------------------------------------------------------
 
+//---------------------------Corrimiento Logico/Aritmetico Izquierdo---------------
+
+selection = 4'h6; A = 4'b1100; B = 4'h2; #10;
+
+// 1100 << 2
+
+assert (result  === 4'b0000) else $error("Corrimiento izquierdo 1100 << 2  fallo");
+
+// 0001 << 1
+
+A = 4'b0001; B = 4'h1; #10;
+assert (result  === 4'b0010) else $error("Corrimiento izquierdo 0001 << 1  fallo");
+
+// 0101 << 1
+
+A = 4'b0101; #10;
+assert (result  === 4'b1010) else $error("Corrimiento izquierdo 0101 << 1  fallo");
+
+// 0001 << 3
+
+A = 4'b0001; B = 4'h3; #10;
+assert (result  === 4'b1000) else $error("Corrimiento izquierdo 0001 << 3  fallo");
+
+// 0001 << 5
+
+A = 4'b0001; B = 4'h5; #10;
+assert (result  === 4'h0) else $error("Corrimiento izquierdo 0001 << 5  fallo");
+
+// 0111 << 1
+
+A = 4'b0111; B = 4'h1; #10;
+assert (result  === 4'b1110) else $error("Corrimiento izquierdo 0111 << 1  fallo");
+
+//----------------------------------------------------------------------
+
+//---------------------------Corrimiento Logico Derecho---------------
+
+selection = 4'h7; A = 4'b1100; B = 4'h2; #10;
+
+// 1100 >> 2
+
+assert (result  === 4'b0011) else $error("Corrimiento Derecho logico 1100 >> 2  fallo");
+
+// 0001 >> 1
+
+A = 4'b0001; B = 4'h1; #10;
+assert (result  === 4'b0000) else $error("Corrimiento Derecho logico 0001 >> 1  fallo");
+
+// 0101 >> 1
+
+A = 4'b0101; #10;
+assert (result  === 4'b0010) else $error("Corrimiento Derecho logico 0101 >> 1  fallo");
+
+// 0110 >> 2
+
+A = 4'b1010; B = 4'h2; #10;
+assert (result  === 4'b0010) else $error("Corrimiento Derecho logico 1010 >> 2  fallo");
+
+// 0001 >> 5
+
+A = 4'b0001; B = 4'h5; #10;
+assert (result  === 4'h0) else $error("Corrimiento Derecho logico 0001 >> 5  fallo");
+
+// 0111 >> 1
+
+A = 4'b0111; B = 4'h1; #10;
+assert (result  === 4'b0011) else $error("Corrimiento Derecho logico 0111 >> 1  fallo");
+
+//----------------------------------------------------------------------
+
+//---------------------------Corrimiento Aritmetico Derecho---------------
+
+selection = 4'h8; A = 4'b1100; B = 4'h2; #10;
+
+// 1100 >> 2
+
+assert (result  === 4'b1111) else $error("Corrimiento Derecho aritmetico 1100 >> 2  fallo");
+
+// 0001 >> 1
+
+A = 4'b0001; B = 4'h1; #10;
+assert (result  === 4'b0000) else $error("Corrimiento Derecho aritmetico 0001 >> 1  fallo");
+
+// 0101 >> 1
+
+A = 4'b0101; #10;
+assert (result  === 4'b0010) else $error("Corrimiento Derecho aritmetico 0101 >> 1  fallo");
+
+// 0110 >> 2
+
+A = 4'b1010; B = 4'h2; #10;
+assert (result  === 4'b1110) else $error("Corrimiento Derecho aritmetico 1010 >> 2  fallo");
+
+// 0001 >> 5
+
+A = 4'b0001; B = 4'h5; #10;
+assert (result  === 4'h0) else $error("Corrimiento Derecho aritmetico 0001 >> 5  fallo");
+
+// 0111 >> 1
+
+A = 4'b0111; B = 4'h1; #10;
+assert (result  === 4'b0011) else $error("Corrimiento Derecho aritmetico 0111 >> 1  fallo");
+
+//----------------------------------------------------------------------
 end
 endmodule 
