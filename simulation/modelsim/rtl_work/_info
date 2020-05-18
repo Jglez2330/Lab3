@@ -7,54 +7,54 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/lab3_git/simulation/modelsim
+Z0 dC:/Proyectos_Quartus/Lab3/simulation/modelsim
 vALU
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1589803483
+Z2 !s110 1589808303
 !i10b 1
 !s100 QLzL2de1Jc^A3>C1embnU0
-Icd?[0Dgl:LlE]4k<E1m:U1
+IE5YBmkcBc8Lgd[bA<dgzd2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 ALU_sv_unit
 S1
 R0
-w1589760326
-8C:/lab3_git/ALU.sv
-FC:/lab3_git/ALU.sv
+w1589787606
+8C:/Proyectos_Quartus/Lab3/ALU.sv
+FC:/Proyectos_Quartus/Lab3/ALU.sv
 L0 1
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1589803483.000000
-!s107 C:/lab3_git/ALU.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/ALU.sv|
+Z5 !s108 1589808302.000000
+!s107 C:/Proyectos_Quartus/Lab3/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/ALU.sv|
 !i113 1
 Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/lab3_git
+Z7 !s92 -sv -work work +incdir+C:/Proyectos_Quartus/Lab3
 Z8 tCvgOpt 0
 n@a@l@u
 vALU_tb
 R1
 R2
 !i10b 1
-!s100 M^>odKdX8`hKjkR3KRGQe0
-IF_kT^0_oN^_`]DQFUC:2f0
+!s100 ]:WMeYCNgkHnM_A1kAG[j1
+IZP_A^IWM_KCRmHWWY6kjZ2
 R3
 !s105 ALU_tb_sv_unit
 S1
 R0
-w1589803448
-8C:/lab3_git/ALU_tb.sv
-FC:/lab3_git/ALU_tb.sv
+w1589808203
+8C:/Proyectos_Quartus/Lab3/ALU_tb.sv
+FC:/Proyectos_Quartus/Lab3/ALU_tb.sv
 L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/lab3_git/ALU_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/ALU_tb.sv|
+!s108 1589808303.000000
+!s107 C:/Proyectos_Quartus/Lab3/ALU_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/ALU_tb.sv|
 !i113 1
 R6
 R7
@@ -62,25 +62,25 @@ R8
 n@a@l@u_tb
 vand_N
 R1
-Z9 !s110 1589803482
+Z9 !s110 1589808302
 !i10b 1
 !s100 N>5DA_MX[MCR3nA8JObJe1
-I6PJd7O8L3MaKa9TlT2<K_1
+IEi4AcLF6jNNYO=VzFN5M_2
 R3
 !s105 and_N_sv_unit
 S1
 R0
-Z10 w1589472726
-8C:/lab3_git/and_N.sv
-FC:/lab3_git/and_N.sv
+w1588871214
+8C:/Proyectos_Quartus/Lab3/and_N.sv
+FC:/Proyectos_Quartus/Lab3/and_N.sv
 L0 3
 R4
 r1
 !s85 0
 31
-Z11 !s108 1589803482.000000
-!s107 C:/lab3_git/and_N.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/and_N.sv|
+R5
+!s107 C:/Proyectos_Quartus/Lab3/and_N.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/and_N.sv|
 !i113 1
 R6
 R7
@@ -88,25 +88,25 @@ R8
 nand_@n
 vflagVB_logic
 R1
-R2
+R9
 !i10b 1
 !s100 B9<g^fBHomnUKg@k=Bj;f3
-Ik2SfoOoHG1E_WZSVcXmQ;0
+I0nTFbk]E5QlRG3<X`j4LF1
 R3
 !s105 flagVB_logic_sv_unit
 S1
 R0
-w1589759154
-8C:/lab3_git/flagVB_logic.sv
-FC:/lab3_git/flagVB_logic.sv
+w1589706511
+8C:/Proyectos_Quartus/Lab3/flagVB_logic.sv
+FC:/Proyectos_Quartus/Lab3/flagVB_logic.sv
 L0 3
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/lab3_git/flagVB_logic.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/flagVB_logic.sv|
+!s107 C:/Proyectos_Quartus/Lab3/flagVB_logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/flagVB_logic.sv|
 !i113 1
 R6
 R7
@@ -114,25 +114,25 @@ R8
 nflag@v@b_logic
 vflagZero_logic
 R1
-R2
+R9
 !i10b 1
 !s100 RBmA5RY6Po^0F_5;6BN7>0
-IXknVcT_kR1@<NY=DBzR[80
+IoKBQZQg2>JgOUc8]__H3D1
 R3
 !s105 flagZero_logic_sv_unit
 S1
 R0
-w1589671316
-8C:/lab3_git/flagZero_logic.sv
-FC:/lab3_git/flagZero_logic.sv
+Z10 w1589703754
+8C:/Proyectos_Quartus/Lab3/flagZero_logic.sv
+FC:/Proyectos_Quartus/Lab3/flagZero_logic.sv
 L0 7
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/lab3_git/flagZero_logic.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/flagZero_logic.sv|
+!s107 C:/Proyectos_Quartus/Lab3/flagZero_logic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/flagZero_logic.sv|
 !i113 1
 R6
 R7
@@ -143,22 +143,22 @@ R1
 R9
 !i10b 1
 !s100 S3;9C=6hXjU0hCCQTA8W`0
-IDH8>_NZ@9lKdoUX@LkfU`2
+ISOQ1I`4^1?N;HD0:DIWFh1
 R3
 !s105 MUX_N_sv_unit
 S1
 R0
-Z12 w1589667336
-8C:/lab3_git/MUX_N.sv
-FC:/lab3_git/MUX_N.sv
+Z11 w1589479480
+8C:/Proyectos_Quartus/Lab3/MUX_N.sv
+FC:/Proyectos_Quartus/Lab3/MUX_N.sv
 L0 2
 R4
 r1
 !s85 0
 31
-R11
-!s107 C:/lab3_git/MUX_N.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/MUX_N.sv|
+R5
+!s107 C:/Proyectos_Quartus/Lab3/MUX_N.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/MUX_N.sv|
 !i113 1
 R6
 R7
@@ -169,22 +169,22 @@ R1
 R9
 !i10b 1
 !s100 HDZZb_jnoYQZk?ND9<djW3
-IOjjk8Q10XWmh4D6[RbZh?0
+IPZOlmTzRWa<gVD5`OM2O`0
 R3
 !s105 NBitsFullAdder_sv_unit
 S1
 R0
-R12
-8C:/lab3_git/NBitsFullAdder.sv
-FC:/lab3_git/NBitsFullAdder.sv
+R11
+8C:/Proyectos_Quartus/Lab3/NBitsFullAdder.sv
+FC:/Proyectos_Quartus/Lab3/NBitsFullAdder.sv
 L0 1
 R4
 r1
 !s85 0
 31
-R11
-!s107 C:/lab3_git/NBitsFullAdder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/NBitsFullAdder.sv|
+Z12 !s108 1589808301.000000
+!s107 C:/Proyectos_Quartus/Lab3/NBitsFullAdder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/NBitsFullAdder.sv|
 !i113 1
 R6
 R7
@@ -192,25 +192,25 @@ R8
 n@n@bits@full@adder
 vNBitsFullSubstractor
 R1
-R9
+Z13 !s110 1589808301
 !i10b 1
 !s100 ZM3OQl4EW=PQEFVh]`M@;3
-Ibe;4;[:<T?IzWl6fJChjS1
+I6z7<RTj1WhgcA971_gZWG0
 R3
 !s105 NBitsFullSubstractor_sv_unit
 S1
 R0
-R12
-8C:/lab3_git/NBitsFullSubstractor.sv
-FC:/lab3_git/NBitsFullSubstractor.sv
+R11
+8C:/Proyectos_Quartus/Lab3/NBitsFullSubstractor.sv
+FC:/Proyectos_Quartus/Lab3/NBitsFullSubstractor.sv
 L0 1
 R4
 r1
 !s85 0
 31
-R11
-!s107 C:/lab3_git/NBitsFullSubstractor.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/NBitsFullSubstractor.sv|
+R12
+!s107 C:/Proyectos_Quartus/Lab3/NBitsFullSubstractor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/NBitsFullSubstractor.sv|
 !i113 1
 R6
 R7
@@ -218,25 +218,25 @@ R8
 n@n@bits@full@substractor
 vnotA_N
 R1
-R2
+R9
 !i10b 1
 !s100 [oTVERMB9:20cLI]`z2f;2
-Ij:TmnQ;94L<;3F=931mDz1
+ICKUH2o0[zVYASLnJbV_D:0
 R3
 !s105 notA_N_sv_unit
 S1
 R0
-R10
-8C:/lab3_git/notA_N.sv
-FC:/lab3_git/notA_N.sv
+w1589291478
+8C:/Proyectos_Quartus/Lab3/notA_N.sv
+FC:/Proyectos_Quartus/Lab3/notA_N.sv
 L0 3
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/lab3_git/notA_N.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/notA_N.sv|
+!s107 C:/Proyectos_Quartus/Lab3/notA_N.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/notA_N.sv|
 !i113 1
 R6
 R7
@@ -244,25 +244,25 @@ R8
 nnot@a_@n
 vOneBitFullAdder
 R1
-R9
+R13
 !i10b 1
 !s100 O_R>eaOXe2<DgW_:_PgF01
-IB3U?7LER>VUBcR>5KW4kN2
+IJ@G1PA?GZh<Z19NL0O@am2
 R3
 !s105 OneBitFullAdder_sv_unit
 S1
 R0
-R12
-8C:/lab3_git/OneBitFullAdder.sv
-FC:/lab3_git/OneBitFullAdder.sv
+R11
+8C:/Proyectos_Quartus/Lab3/OneBitFullAdder.sv
+FC:/Proyectos_Quartus/Lab3/OneBitFullAdder.sv
 L0 1
 R4
 r1
 !s85 0
 31
-R11
-!s107 C:/lab3_git/OneBitFullAdder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/OneBitFullAdder.sv|
+R12
+!s107 C:/Proyectos_Quartus/Lab3/OneBitFullAdder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/OneBitFullAdder.sv|
 !i113 1
 R6
 R7
@@ -273,22 +273,22 @@ R1
 R9
 !i10b 1
 !s100 Kz=:FMcHKlM:=EY<U[ARX3
-IW7h>`GEQnLzMlWD5UY=:[1
+IMJ0Bnc90GjWSgAF6I4dM73
 R3
 !s105 or_N_sv_unit
 S1
 R0
-R10
-8C:/lab3_git/or_N.sv
-FC:/lab3_git/or_N.sv
+w1589291429
+8C:/Proyectos_Quartus/Lab3/or_N.sv
+FC:/Proyectos_Quartus/Lab3/or_N.sv
 L0 3
 R4
 r1
 !s85 0
 31
-R11
-!s107 C:/lab3_git/or_N.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/or_N.sv|
+R5
+!s107 C:/Proyectos_Quartus/Lab3/or_N.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/or_N.sv|
 !i113 1
 R6
 R7
@@ -296,25 +296,25 @@ R8
 nor_@n
 vshift_left
 R1
-Z13 !s110 1589803481
+R13
 !i10b 1
 !s100 SKjkjn8UOZYicL7Lc:4>W3
-I?1K84CmInNBGAQ`1g1`_U0
+IlW<KHB@jRLfU<6QDd260c3
 R3
 !s105 shift_left_sv_unit
 S1
 R0
-R12
-8C:/lab3_git/shift_left.sv
-FC:/lab3_git/shift_left.sv
+R10
+8C:/Proyectos_Quartus/Lab3/shift_left.sv
+FC:/Proyectos_Quartus/Lab3/shift_left.sv
 L0 1
 R4
 r1
 !s85 0
 31
-Z14 !s108 1589803481.000000
-!s107 C:/lab3_git/shift_left.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/shift_left.sv|
+R12
+!s107 C:/Proyectos_Quartus/Lab3/shift_left.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/shift_left.sv|
 !i113 1
 R6
 R7
@@ -324,22 +324,22 @@ R1
 R13
 !i10b 1
 !s100 oe:>JUoBoM^IQNinciZ7D1
-I2NO1eG>FITSi_zl42CQQ00
+INd1K_jGIPano9Q4Wzc4OH1
 R3
 !s105 shift_right_sv_unit
 S1
 R0
-R12
-8C:/lab3_git/shift_right.sv
-FC:/lab3_git/shift_right.sv
+R10
+8C:/Proyectos_Quartus/Lab3/shift_right.sv
+FC:/Proyectos_Quartus/Lab3/shift_right.sv
 L0 1
 R4
 r1
 !s85 0
 31
-R14
-!s107 C:/lab3_git/shift_right.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/shift_right.sv|
+R12
+!s107 C:/Proyectos_Quartus/Lab3/shift_right.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/shift_right.sv|
 !i113 1
 R6
 R7
@@ -349,47 +349,47 @@ R1
 R13
 !i10b 1
 !s100 ^Z61Q9zT>;XDgEefLX_MQ2
-IPV32G;DgcDa?5m@TC`m113
+IlHBm28T:?082YKVF6SSl43
 R3
 !s105 shift_right_arithmetic_sv_unit
 S1
 R0
-w1589674967
-8C:/lab3_git/shift_right_arithmetic.sv
-FC:/lab3_git/shift_right_arithmetic.sv
+R10
+8C:/Proyectos_Quartus/Lab3/shift_right_arithmetic.sv
+FC:/Proyectos_Quartus/Lab3/shift_right_arithmetic.sv
 L0 1
 R4
 r1
 !s85 0
 31
-R14
-!s107 C:/lab3_git/shift_right_arithmetic.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/shift_right_arithmetic.sv|
+R12
+!s107 C:/Proyectos_Quartus/Lab3/shift_right_arithmetic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/shift_right_arithmetic.sv|
 !i113 1
 R6
 R7
 R8
 vxor_N
 R1
-R2
+R9
 !i10b 1
 !s100 UMjQc=hkMBBWD^m2OhnD10
-IJhR8RKFMz:i8k`nNnelPZ1
+ImEz^VO@Ieo9PV<;OVP6T;1
 R3
 !s105 xor_N_sv_unit
 S1
 R0
-w1589472727
-8C:/lab3_git/xor_N.sv
-FC:/lab3_git/xor_N.sv
+w1589291444
+8C:/Proyectos_Quartus/Lab3/xor_N.sv
+FC:/Proyectos_Quartus/Lab3/xor_N.sv
 L0 3
 R4
 r1
 !s85 0
 31
-R11
-!s107 C:/lab3_git/xor_N.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/lab3_git|C:/lab3_git/xor_N.sv|
+R5
+!s107 C:/Proyectos_Quartus/Lab3/xor_N.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Proyectos_Quartus/Lab3|C:/Proyectos_Quartus/Lab3/xor_N.sv|
 !i113 1
 R6
 R7

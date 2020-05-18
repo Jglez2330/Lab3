@@ -202,6 +202,125 @@ assert (result  === 4'b0011) else $error("Corrimiento Derecho aritmetico 0111 >>
 
 //----------------------------------------------------------------------
 
+//-------------------------AND------------------------------------------
+
+// 0000 & 0000
+selection = 4'h2; A = 4'h0; B = 4'h0; #10;
+assert (result === 4'h0) else $error("AND entre 0000 & 0000 Fallo");
+
+// 1111 & 0000
+A = 4'hF; #10;
+assert (result === 4'h0) else $error("AND entre 1111 & 0000 Fallo");
+
+// 1111 & 0101
+B = 4'h5; #10;
+assert (result === 4'h5) else $error("AND entre 1111 & 0101 Fallo");
+
+// 0000 & 0110
+A = 4'h0; B = 4'h6; #10;
+assert (result === 4'h0) else $error("AND entre 0000 & 0110 Fallo");
+
+// 0101 & 0110
+A = 4'h5; #10;
+assert (result === 4'b0100) else $error("AND entre 0101 & 0110 Fallo");
+
+// 1111 & 1111
+
+A = 4'hF; B = 4'hF;#10;
+assert (result === 4'hF) else $error("AND entre 1111 & 1111 Fallo");
+
+//----------------------------------------------------------------------
+
+
+//-------------------------OR-------------------------------------------
+
+// 0000 | 0000
+selection = 4'h3; A = 4'h0; B = 4'h0; #10;
+assert (result === 4'h0) else $error("OR entre 0000 | 0000 Fallo");
+
+// 1111 | 0000
+A = 4'hF; #10;
+assert (result === 4'hF) else $error("OR entre 1111 | 0000 Fallo");
+
+// 1111 | 0101
+B = 4'h5; #10;
+assert (result === 4'hF) else $error("OR entre 1111 | 0101 Fallo");
+
+// 0000 | 0110
+A = 4'h0; B = 4'h6; #10;
+assert (result === 4'h6) else $error("OR entre 0000 | 0110 Fallo");
+
+// 0101 | 0110
+A = 4'h5; #10;
+assert (result === 4'h7) else $error("OR entre 0101 | 0110 Fallo");
+
+// 1111 | 1111
+
+A = 4'hF; B = 4'hF;#10;
+assert (result === 4'hF) else $error("OR entre 1111 | 1111 Fallo");
+
+//----------------------------------------------------------------------
+
+
+//-------------------------XOR------------------------------------------
+
+// 0000 ^ 0000
+selection = 4'h5; A = 4'h0; B = 4'h0; #10;
+assert (result === 4'h0) else $error("XOR entre 0000 ^ 0000 Fallo");
+
+// 1111 ^ 0000
+A = 4'hF; #10;
+assert (result === 4'hF) else $error("XOR entre 1111 ^ 0000 Fallo");
+
+// 1111 ^ 0101
+B = 4'h5; #10;
+assert (result === 4'hA) else $error("XOR entre 1111 ^ 0101 Fallo");
+
+// 0000 ^ 0110
+A = 4'h0; B = 4'h6; #10;
+assert (result === 4'h6) else $error("XOR entre 0000 ^ 0110 Fallo");
+
+// 0101 ^ 0110
+A = 4'h5; #10;
+assert (result === 4'h3) else $error("XOR entre 0101 ^ 0110 Fallo");
+
+// 1111 ^ 1111
+
+A = 4'hF; B = 4'hF;#10;
+assert (result === 4'h0) else $error("XOR entre 1111 ^ 1111 Fallo");
+
+//----------------------------------------------------------------------
+
+//-------------------------NOT A----------------------------------------
+
+// ~ 0000
+selection = 4'h4; A = 4'h0; #10;
+assert (result === 4'hF) else $error("NOT de 0000 Fallo");
+
+// ~ 1001
+A = 4'h9; #10;
+assert (result === 4'h6) else $error("NOT de 1001 Fallo");
+
+// ~ 1010
+A = 4'hA; #10;
+assert (result === 4'h5) else $error("NOT de 1010 Fallo");
+
+// ~ 1011
+A = 4'hB; #10;
+assert (result === 4'h4) else $error("NOT de 1011 Fallo");
+
+// ~ 1100
+A = 4'hC; #10;
+assert (result === 4'h3) else $error("NOT de 1100 Fallo");
+
+// ~ 1111
+
+A = 4'hF; #10;
+assert (result === 4'h0) else $error("NOT de 1111 Fallo");
+
+//----------------------------------------------------------------------
+
+
 //-------------------------Flags----------------------------------------
 
 //Zero
@@ -238,5 +357,6 @@ A = 4'hE; B = 4'h2; #10;
 assert (carry_out  === 4'h1) else $error("Flag carry_out fallo");
 
 //----------------------------------------------------------------------
+
 end
 endmodule 
